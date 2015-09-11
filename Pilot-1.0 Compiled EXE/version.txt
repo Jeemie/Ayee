@@ -1,0 +1,18 @@
+Version 1.0 
+
+Finished:
+-Naming mechanism.
+
+Needs Editing:
+-Placeholders
+
+Working on:
+-Coding through the story
+
+Need to implement:
+-Actual artwork + different poses
+-BGM
+-Story
+-Branches
+-More Scenes
+-Better dialogue
