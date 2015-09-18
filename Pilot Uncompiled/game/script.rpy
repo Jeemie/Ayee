@@ -51,7 +51,7 @@ if female == "":
     $ female="Natalie"
 female "My name is %(female)s."
 female "We're assigned as partners in this class! You did check your email, right?"
-
+#
 
 hide girl school
 
