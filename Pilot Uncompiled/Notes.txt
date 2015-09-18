@@ -1,0 +1,30 @@
+Resolution: 1280x1080
+
+
+Time and Pause statements are DIFFERENT. Time is at time blank. Pause waits for blank seconds.
+
+|||||||||||||||||||||||||||||||||||||||||
+Centering Sprites:
+show placeholder animated at Position(xpos = 0.35, xanchor= 0, ypos= 0.10, yanchor = 1)
+
+|||||||||||||||||||||||||||||||||||||||||
+Two Sprites Talking:
+
+show placeholder animated at Position(xpos = 0.05, xanchor= 0, ypos= 0.10, yanchor = 1):     (Sprite on left)
+    linear 1.0 xalign 0.0
+    pause 3.0
+    linear 1.0 xalign 0.30
+    pause 3.0
+    repeat
+
+
+show placeholder animated at Position(xpos = 0.60, xanchor= 0, ypos= 0.10, yanchor = 1):
+    linear 1.0 xalign 0.80
+    pause 3.0
+    linear 1.0 xalign 0.99
+    pause 3.0
+    repeat
+
+
+
+
