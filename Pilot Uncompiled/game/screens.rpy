@@ -181,8 +181,9 @@ screen main_menu():
 
     # The background of the main menu.
     window:
-        style "mm_root"
-
+        #style "mm_root"
+        add "images/tree.jpg"
+        add "mainmenu"
     # The main menu buttons.
     frame:
         style_group "mm"

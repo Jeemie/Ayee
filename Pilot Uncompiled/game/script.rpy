@@ -73,6 +73,8 @@ m "{i}Crap! Did she announce everyone’s partner? I didn’t even hear it! I wa
 m "{i}How am I supposed to find my partner then? And I still don’t even know who it is. Maybe they’ll find me...{/i}"
 
 "There’s a slight tap on your back, and your heart involuntarily jumps in your chest. You’re so on edge today that you could have a heart attack at any time."
+play sound "sfx/punch.mp3"
+pause 0.1
 with vpunch
 
 "You take a deep breath to quickly calm yourself and turn around to find..."
@@ -80,7 +82,7 @@ with vpunch
 show fhappy at basicfade, center
 female "Hey there! It’s nice to meet you! If I heard right, your name is %(m)s, right? Did you remember my name?"
 
-"It’s a cute girl who’s (INSERT DESCRIPTION)"
+"It’s a cute girl!"
 
 "Your heart is beating out of your chest as you throw out the first name that comes to mind."
 

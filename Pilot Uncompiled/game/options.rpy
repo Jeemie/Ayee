@@ -71,7 +71,7 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#b0b8ba",
+        #mm_root =
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
@@ -117,7 +117,10 @@ init -1 python hide:
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    #style.window.yminimum = 1080
+    #style.window.ymaximum = 1080
+    #style.window.xminimum = 1280
+    #style.window.xmaximum = 1280
 
 
     #########################################
@@ -178,8 +181,8 @@ init -1 python hide:
 
     ## Sounds that are used when entering and exiting the game menu.
 
-    config.enter_sound = "click.wav"
-    config.exit_sound = "click.wav"
+    #config.enter_sound = "click.wav"
+    #config.exit_sound = "click.wav"
 
     ## A sample sound that can be played to check the sound volume.
 
@@ -187,7 +190,7 @@ init -1 python hide:
 
     ## Music that is played while the user is at the main menu.
 
-    config.main_menu_music = "main_menu_theme.ogg"
+    config.main_menu_music = "music/memento.mp3"
 
 
     #########################################
