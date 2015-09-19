@@ -29,11 +29,11 @@ image mainmenu2:
         repeat
     
 image eileen happy = "eileen_happy.png"
-image bg tree = "big_tree"
-image bg black = "black.jpg"
-image fsassy = "female_sassy.png"
-image fhappy = "female_happy.png"
-image fangry = "female_angry.png"
+image bg tree = "images/big_tree"
+image bg black = "images/black.jpg"
+image fsassy = "images/female_sassy.png"
+image fhappy = "images/female_happy.png"
+image fangry = "images/female_angry.png"
 image placeholder animated:
     im.Scale("images/tryagain.png", 400, 800)
     pause 1
