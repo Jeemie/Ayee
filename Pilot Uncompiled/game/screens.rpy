@@ -184,6 +184,7 @@ screen main_menu():
         #style "mm_root"
         add "images/tree.jpg"
         add "mainmenu"
+        add "mainmenu2"
     # The main menu buttons.
     frame:
         style_group "mm"

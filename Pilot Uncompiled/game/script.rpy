@@ -30,6 +30,10 @@ p "Hello? I was asking you your first name."
 male "{i}O-Oh crap! I must have spaced out.{/i}"
 
 male "M-my name? Oh, it's... uh..."
+scene olin at dim
+show black behind olin
+
+
 $ m = renpy.input("Type your name here")
 $ m = m.strip()
 $ blank = "%(m)s"
@@ -39,7 +43,10 @@ if m == "":
     "My name is %(m)s!"
 if blank == "a":
     p "Woah, you're not trying to copy NGNL, are you?!"
-    
+scene olin at undim
+pause 1.0
+hide black
+
 p "Alright then. %(m)s it is."
 
 "She checks your name off her list and moves onto the next person."
@@ -88,17 +95,51 @@ female "Hey there! It’s nice to meet you! If I heard right, your name is %(m)s
 
 m "O-oh, yeah, I d-did! Uhh, yeah, my name’s %(m)s, and you’re...uhh...you're ...?"
 hide fhappy at basicfade
+show olin at dim
+show black behind olin
 
 show fsassy at basicfade, left with moveinleft
 $ f = renpy.input("Choose a name for the girl:")
 $ f = f.strip()
 if f == "":
     $ f = "Natalie"
+show olin at undim
+pause 1.0
+hide black
 
 f "My name is %(f)s."
 
 f "Yeah, that’s it! I was just making sure you were paying attention. It’s nice to meet you! I’m sure we’re gonna be great partners. We should get going before the next class comes in, though."
 
+menu:
+    "As long as you don't slow me down.":
+        hide fsassy
+        show fangry
+        f "Well fine, if you don’t want to work with me, I’ll go get a different partner."
+        "She immediately goes over to the professor and although you can’t hear everything, it doesn’t sound good for you." 
+        "Afterward, the professor comes over and tells you that the two of you would be working with different partners."
+        scene black with dissolve
+        show text "Game Over" at basicfade with Pause(2.5)
+        scene black with dissolve
+        return
+    "It is a pleasure to work with you, m'lady.":
+        hide fsassy at basicfade
+        show fhappy at basicfade, left
+        f "We should get going before the next class comes in though!"
+    "W-Wait, I actually have to work with a girl?!":
+        hide fsassy
+        show fangry
+        f "Well fine, if you don’t want to work with me, I’ll go get a different partner."
+        "She immediately goes over to the professor and although you can’t hear everything, it doesn’t sound good for you." 
+        "Afterward, the professor comes over and tells you that the two of you would be working with different partners."
+        scene black with dissolve
+        show text "Game Over" at basicfade with Pause(2.5)
+        scene black with dissolve
+        return
+    "I-It's nice to meet you!":
+        hide fsassy at basicfade
+        show fhappy at basicfade, left
+        f "We should get going before the next class comes in though!"
 "You notice that you’re the last two left in the classroom and students for the next class are about to come in."
 
 f "So, we should plan a time to get together and plan everything out."

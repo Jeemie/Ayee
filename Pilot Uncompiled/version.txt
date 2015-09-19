@@ -1,3 +1,21 @@
+Version 1.2b
++Finished up scripting for Scene1
++Added all placeholders
++Added female_angry.png
+
+Version 1.2
++Added many placeholders.
++Added menu animation (Still a WIP)
++Added BGM (Final)
++Splitting Scenes into their individual file scripts.
++Added some transitions
+
+
+Version 1.1a
++"basicfade" Fades when appearing and disappearing. In definitions.rpy
++More placeholders for girl + male.
++Changed game to start at 1280x1080 resolution
+
 Version 1.1
 - Scene 1 of male side completed (except professor asset and accurate shake transition)
 - "m" switched with "male" and "f" switched with "female"

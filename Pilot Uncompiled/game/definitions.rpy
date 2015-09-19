@@ -1,6 +1,5 @@
 # Declare images below this line, using the image statement.
-init:
-    define flash = Fade(.25, 0.0, .75, color="#fff")
+
 image mainmenu:
 
     "images/bg1.png"
@@ -18,13 +17,23 @@ image mainmenu:
     linear 0.25 alpha 0.0
     "images/bg3.png"
     linear 0.5 alpha 1.0
- 
-
+        
+image mainmenu2:
+    time 7.0
+    block:
+        "images/heart.png"
+        linear 1.0 alpha 0.0
+        pause 0.5
+        linear 1.0 alpha 1.0
+        pause 0.5
+        repeat
+    
 image eileen happy = "eileen_happy.png"
 image bg tree = "big_tree"
 image bg black = "black.jpg"
 image fsassy = "female_sassy.png"
 image fhappy = "female_happy.png"
+image fangry = "female_angry.png"
 image placeholder animated:
     im.Scale("images/tryagain.png", 400, 800)
     pause 1
@@ -47,3 +56,11 @@ transform basicfade:
             linear 1.0 alpha 1.0
         on hide:
             linear 0.5 alpha 0.0    
+           
+           
+transform dim:
+    linear 1.0 alpha 0.5
+    
+    
+transform undim:
+    linear 1.0 alpha 1.0
