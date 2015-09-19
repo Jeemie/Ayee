@@ -1,20 +1,4 @@
 ﻿# You can place the script of your game in this file.
-
-# Declare images below this line, using the image statement.
-image eileen happy = "eileen_happy.png"
-image bg tree = "big_tree"
-image girl school = im.Scale("images/schoolgirl.jpeg", 250, 500)
-image girl angry = im.Scale("images/schoolgirla.jpeg", 250, 500)
-image white blank = im.Scale("images/blank1.png", 500, 300)
-image placeholder = im.Scale("images/placeholder.png", 250, 500)
-image placeholder animated:
-    im.Scale("images/tryagain.png", 250, 500)
-    pause 0.1
-    im.Scale("images/tryagain2.png", 250, 500)
-    pause 0.1
-    repeat
-image olin = im.Scale("images/olin.jpg", 800, 600)
-image goddard lab = im.Scale("images/wpi_top.jpg", 800, 600)
 # Declare characters used by this game.
 define p = Character('Professor', color="#c8ffc8")
 define male = Character('Male', color="#c8ffc8")

@@ -5,8 +5,6 @@ image eileen happy = "eileen_happy.png"
 image bg tree = "big_tree"
 image fsassy = "female_sassy.png"
 image fhappy = "female_happy.png"
-image girlschool = im.Scale("images/schoolgirl.jpeg", 400, 800)
-image girlangry = im.Scale("images/schoolgirla.jpeg", 400, 800)
 image placeholder animated:
     im.Scale("images/tryagain.png", 400, 800)
     pause 1
