@@ -1,13 +1,14 @@
 ﻿# You can place the script of your game in this file.
 # Declare characters used by this game.
-define p = Character('Professor', color="#c8ffc8")
-define male = Character('Male', color="#c8ffc8")
-define female = Character('Female', color="#c8ffc8")
 
 # The game starts here.
 label start:
-scene olin
-show placeholder animated at Position(xpos = 0, xanchor= 0, ypos= 0.25, yanchor = 1)
+scene black with dissolve
+show text "Day One \n Chemistry Class" at basicfade with Pause(2.5)
+scene black with dissolve
+
+scene olin with dissolve
+
 male "{i}It's the first day of classes. I remember facing this day so many times in high school.{/i}"
 
 male "{i}Back then, I wasn’t so prepared. Everything seemed so intimidating, and everyone had their own friends.{/i}"
@@ -29,13 +30,13 @@ p "Hello? I was asking you your first name."
 male "{i}O-Oh crap! I must have spaced out.{/i}"
 
 male "M-my name? Oh, it's... uh..."
-$ m = renpy.input("type your name here")
+$ m = renpy.input("Type your name here")
 $ m = m.strip()
 $ blank = "%(m)s"
 if m == "":
     $ m="Blank"
     $ blank="a"
-male "My name is %(m)s!"
+    "My name is %(m)s!"
 if blank == "a":
     p "Woah, you're not trying to copy NGNL, are you?!"
     
@@ -76,14 +77,17 @@ with vpunch
 
 "You take a deep breath to quickly calm yourself and turn around to find..."
 
-show female happy
+show fhappy at basicfade, center
 female "Hey there! It’s nice to meet you! If I heard right, your name is %(m)s, right? Did you remember my name?"
 
 "It’s a cute girl who’s (INSERT DESCRIPTION)"
 
 "Your heart is beating out of your chest as you throw out the first name that comes to mind."
 
-m "O-oh, yeah, I d-did! Uhh, yeah, my name’s %(m)s, and you’re...uhh...you're ___, right?"
+m "O-oh, yeah, I d-did! Uhh, yeah, my name’s %(m)s, and you’re...uhh...you're ...?"
+hide fhappy at basicfade
+
+show fsassy at basicfade, left with moveinleft
 $ f = renpy.input("Choose a name for the girl:")
 $ f = f.strip()
 if f == "":
@@ -139,5 +143,7 @@ f "Yeah, bye for now."
 #        with vpunch
 #        play sound "sfx/punch.mp3"
 #        male "Okay.. okay.."
+
+jump scene2
 
 return

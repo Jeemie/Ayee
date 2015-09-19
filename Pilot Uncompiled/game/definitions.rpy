@@ -3,6 +3,7 @@
 
 image eileen happy = "eileen_happy.png"
 image bg tree = "big_tree"
+image bg black = "black.jpg"
 image fsassy = "female_sassy.png"
 image fhappy = "female_happy.png"
 image placeholder animated:
@@ -11,12 +12,13 @@ image placeholder animated:
     im.Scale("images/tryagain2.png", 400, 800)
     pause 1
     repeat
-image olin = "images/olin.jpg"
-image goddardlab = "images/goddard_lab.jpg"
+image bg olin = "images/olin.jpg"
+image bg goddardlab = "images/goddard_lab.jpg"
 
 # Declare characters used by this game.
-define f = Character('Professor', color="#c8ffc8")
-define m = Character('Male', color="c8ffc8")
+define p = Character('Professor', color="#c8ffc8")
+define male = Character('Male', color="#c8ffc8")
+define female = Character('Female', color="#c8ffc8")
 
 
 transform basicfade:
