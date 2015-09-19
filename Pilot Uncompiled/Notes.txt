@@ -1,5 +1,5 @@
 Resolution: 1280x1080
-
+Sprite Sizes: 400x800
 
 Time and Pause statements are DIFFERENT. Time is at time blank. Pause waits for blank seconds.
 
@@ -18,12 +18,22 @@ show placeholder animated at Position(xpos = 0.05, xanchor= 0, ypos= 0.10, yanch
     repeat
 
 
-show placeholder animated at Position(xpos = 0.60, xanchor= 0, ypos= 0.10, yanchor = 1):
+show placeholder animated at Position(xpos = 0.60, xanchor= 0, ypos= 0.10, yanchor = 1):	(Sprite on Right)
     linear 1.0 xalign 0.80
     pause 3.0
     linear 1.0 xalign 0.99
     pause 3.0
     repeat
+
+||||||||||||||||||||||||||||||||||||||
+Basic Fading
+
+
+show fsassy at basicfade
+"Cute Girl" "Nice to meet you, %(male)s !"
+hide fsassy at basicfade with moveoutleft
+
+show fhappy at basicfade with moveinright
 
 
 
