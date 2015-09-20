@@ -1,3 +1,11 @@
+Version 1.3
++Finished adding and proofreading all scenes' script
+
+To Do:
+-Replace punch transitions with proper jump transitions
+-Allow user to choose whether to start with the male or female side
+-Fix bugs related to unknown characters and images
+
 Version 1.2d
 +Added the remainder of the scenes on the male side
 +Proofread dialogue for spelling and grammar
