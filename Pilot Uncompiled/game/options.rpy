@@ -80,7 +80,7 @@ init -1 python hide:
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
-        rounded_window = False,
+        rounded_window = True,
 
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
@@ -118,9 +118,6 @@ init -1 python hide:
     ## and padding.
 
     #style.window.yminimum = 1080
-    #style.window.ymaximum = 1080
-    #style.window.xminimum = 1280
-    #style.window.xmaximum = 1280
 
 
     #########################################
@@ -181,8 +178,8 @@ init -1 python hide:
 
     ## Sounds that are used when entering and exiting the game menu.
 
-    #config.enter_sound = "click.wav"
-    #config.exit_sound = "click.wav"
+    config.enter_sound = "sfx/menusound.wav"
+    config.exit_sound = "sfx/menusound.wav"
 
     ## A sample sound that can be played to check the sound volume.
 
