@@ -1,3 +1,13 @@
+V1.2c
++Finished up Scene2 + 3
++New Menu
++Added tons of SFX
++Added new placeholders (Unique Ones)
++Splashscreen before menu showing logo
+
+ToDo:
+Get more placeholders -> Original
+
 Version 1.2b
 +Finished up scripting for Scene1
 +Added all placeholders
