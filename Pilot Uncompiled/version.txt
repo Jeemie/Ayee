@@ -1,3 +1,7 @@
+Version 1.2d
++Added the remainder of the scenes on the male side
++Proofread dialogue for spelling and grammar
+
 V1.2c
 +Finished up Scene2 + 3
 +New Menu
