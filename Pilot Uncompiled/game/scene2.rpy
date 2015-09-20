@@ -1,7 +1,7 @@
 label scene2:
 
 scene black with dissolve
-show text "Day One \n Dorm Room Troubles" at basicfade with Pause(2.5)
+show text "Day Two \n Dorm Room Troubles" at basicfade with Pause(2.5)
 scene black with dissolve
 
 scene dorm with dissolve

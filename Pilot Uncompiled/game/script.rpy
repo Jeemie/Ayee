@@ -45,7 +45,7 @@ if blank == "a":
     p "Woah, you're not trying to copy NGNL, are you?!"
 scene olin at undim
 pause 1.0
-hide black
+
 
 p "Alright then. %(m)s it is."
 

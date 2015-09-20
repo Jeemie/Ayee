@@ -2,7 +2,7 @@ label scene3:
     
 
 scene black with dissolve
-show text "Day One \n The Big Meeting" at basicfade with Pause(2.5)
+show text "Day Two \n The Big Meeting" at basicfade with Pause(2.5)
 scene black with dissolve
 
 scene tree
