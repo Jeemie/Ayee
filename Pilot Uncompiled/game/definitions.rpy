@@ -36,27 +36,29 @@ image mainmenu2:
         repeat
     
 image eileen happy = "eileen_happy.png"
-image bg tree = "images/big_tree"
+image bg tree = "images/big_tree.jpg"
 image bg black = "images/black.jpg"
 image bg olin = "images/olin.jpg"
-image bg goddardlab = "images/goddard_lab.jpg"
-image bg dorm="images/dorm.jpg"
+image bg labroom = "images/goddard_lab.jpg"
+image bg dorm = "images/dorm.jpg"
+image bg dininghall = "images/daka.jpg"
+image bg quad = "images/quad.jpg"
 
 image fsassy = "images/female_sassy.png"
 image fhappy = "images/female_happy.png"
 image fangry = "images/female_angry.png"
 image fsad = "images/female_sad.png"
-
+image flaughing = "images/female_laughing.png"
 
 image mhappy = "images/male_happy.png"
 image msad = "images/male_sad.png"
 image mangry = "images/male_angry.png"
 image mshocked = "images/male_shocked.png"
 
-image thappy = "images/twin_happy.png"
-image tsad = "images/twin_sad.png"
-image tangry = "images/twin_angry.png"
-image tshocked = "images/twin_shocked.png"
+image nhappy = "images/twin_happy.png"
+image nsad = "images/twin_sad.png"
+image nangry = "images/twin_angry.png"
+image nshocked = "images/twin_shocked.png"
 
 image logo = "images/logo.png"
 
@@ -69,9 +71,12 @@ image placeholder animated:
 
 
 # Declare characters used by this game.
+define f = persistent.f
+define m = persistent.m
 define p = Character('Professor', color="#c8ffc8")
 define male = Character('Male', color="#c8ffc8")
 define female = Character('Female', color="#c8ffc8")
+define n = Character('Nick', color="#c8ffc8")
 
 
 #Animation("images/tree.jpg", 2.0, "images/bg1.png", 2.0, "images/bg2.png", 2.0)

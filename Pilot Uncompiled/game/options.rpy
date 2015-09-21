@@ -9,6 +9,10 @@
 
 init -1 python hide:
 
+
+
+
+        
     ## Should we enable the use of developer tools? This should be
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
@@ -264,6 +268,7 @@ init -1 python hide:
 python early:
     config.save_directory = "Pilot-1441156229"
 
+
 init -1 python hide:
     #########################################
     ## Default values of Preferences.
@@ -283,6 +288,9 @@ init -1 python hide:
     ## The default auto-forward time setting.
 
     config.default_afm_time = 10
+
+    
+
 
     #########################################
     ## More customizations can go here.

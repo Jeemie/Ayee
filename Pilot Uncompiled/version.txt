@@ -1,3 +1,18 @@
+Version 1.4
++Split all files into respective scenes.
++Added Persistence to the names.
++Added more images
++Created alternate scene ones for both male and females.
++Added Epilogue option to main menu if male and females are completed.
+
+
+
+
+To Do:
+CODE CLEANUP.
+Make the images actually hide.
+
+
 Version 1.3
 +Finished adding and proofreading all scenes' script
 
