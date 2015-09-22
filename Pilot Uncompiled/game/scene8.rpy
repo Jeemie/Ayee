@@ -5,8 +5,8 @@ show text "Calamity" at basicfade with Pause(2.5)
 scene black with dissolve
 
 
-scene bg tree
-show fangry
+scene bg tree with dissolve
+show f angry at fastfade
 m "What are you thinking??"
 
 f "What am I thinking? I'm thinking you're a jerk!"
@@ -23,14 +23,14 @@ m "{i}Well, that's because I am clueless...{/i}"
 
 menu:
     "I think you act strangely each time I see you, too.":
-        show fshocked
+        show fshocked at fastfade
     "I really don't understand. Are you sure you're alright?":
-        show fshocked
+        show fshocked at fastfade
     "Maybe you're mistaking someone else for me?":
-        show fshocked
+        show fshocked at fastfade
 
 f "What?"
-show f angry
+show f angry at fastfade
 f "What? No, this isn't about me! Ugh, I can't believe you sometimes!"
 
 "She storms off in a fit of rage. You're left to ponder exactly what just happened."

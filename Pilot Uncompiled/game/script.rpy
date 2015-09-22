@@ -22,14 +22,4 @@ menu:
     "Play Epilogue" if persistent.epilogue == True:
         jump escene1
         
-
-
-
-
-
-
-
-
-
-
-#same name option, change vpunch to custom transition, no chem pun intended, renpy dialogue halves for this isn't about me
+#to do later: same name option, change vpunch to custom transition, no chem pun intended, renpy dialogue halves for this isn't about me, change name button

@@ -3,8 +3,8 @@ scene black with dissolve
 show text "Thick Like Cool Whip" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg tree
-show fsad
+scene bg tree with dissolve
+show f sad at basicfade
 n "Hey, %(f)s, what's up?"
 
 f "Oh, h-hey %(m)s, nothing really. Who's that you're with?"
@@ -13,7 +13,7 @@ n "Oh, that's just this girl whom I'm helping with calculus. You know, she reall
 
 f "That's...so nice of you. I'm glad you could do that. I've got to go now, though."
 
-hide fsad
+hide f sad
 n "I hadn't thought of myself as crazy at the time. I was just mad."
 
 n "Madly in love, that is. Get it?"

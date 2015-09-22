@@ -1,3 +1,7 @@
+Version 1.4a
++Added transitions to character images and scene changes.
++Fixed image hiding bugs.
+
 Version 1.4
 +Split all files into respective scenes.
 +Added Persistence to the names.

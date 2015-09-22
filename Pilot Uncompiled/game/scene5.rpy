@@ -5,7 +5,7 @@ show text "Day Three \n Back to Class" at basicfade with Pause(2.5)
 scene black with dissolve
 
 
-scene bg black
+scene bg black with dissolve
 "Today is now Tuesday and you have your chemistry class again. The thought of seeing %(f)s again makes you get to class a bit earlier than you normally would."
 
 scene bg classroom
@@ -18,7 +18,7 @@ with vpunch
 
 "You jump in your seat, startled at the sudden voice. Looking around, there are many more people in the room now, and sitting next to you is %(f)s."
 
-show fhappy
+show f happy at basicfade
 f "Hi there, %(m)s. I'm glad I could scare you awake! It's pretty funny to make you jump. Did you not sleep last night?"
 
 m "H-Hey, %(f)s! Uh, no, I didn't sleep very well for some reason...I think it has to do with the heat here."

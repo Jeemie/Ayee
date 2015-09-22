@@ -4,7 +4,7 @@ scene black with dissolve
 show text "Day One \n Dinner Time!" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene dininghall
+scene dininghall with dissolve
 show fshocked at basicfade,center
 
 play sound "sfx/objection.wav"
@@ -13,7 +13,7 @@ f "No way!! You were a championship fencer??"
 m "Well, it's not that I was that good or anything, but my sophomore year of high school I made it to the semi-finals of this national tournament. At the time I was ranked 4th in the US for my age."
 
 hide fshocked at fastfade,center
-show fhappy at fastfade,center
+show f happy at fastfade,center
 
 f "That's so incredible! You must have been awesome at it. So does that mean you're gonna join the fencing team here?"
 
@@ -59,8 +59,8 @@ m "A-Ah, n-no! I didn't mean it like that! I think w-whatever you'd make would b
 
 "Your face is nearly red now as you try to reconcile her, but you completely stop when you see her wide grin."
 
-hide fhappy at fastfade
-show flaughing at fastfade,center
+hide f happy at fastfade
+show f laughing at fastfade,center
 f "Hahahaha! I'm just kidding, %(m)s. I knew what you meant! It {b}is{/b} fun to tease you, though. You turned pretty red there, too!"
 
 m "{i}I got played! But I don't really mind. It feels nice talking to her like this.{/i}"

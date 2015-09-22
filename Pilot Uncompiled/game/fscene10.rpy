@@ -3,8 +3,8 @@ scene black with dissolve
 show text "Bigger Kaboom" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg tree
-show mangry
+scene bg tree with dissolve
+show m angry at fastfade
 m "What are you thinking??"
 
 f "What am I thinking? I'm thinking you're a jerk!"

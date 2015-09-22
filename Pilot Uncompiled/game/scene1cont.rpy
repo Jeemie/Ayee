@@ -69,7 +69,7 @@ with vpunch
 
 "You take a deep breath to quickly calm yourself and turn around to find..."
 
-show fhappy at basicfade, center
+show f happy at basicfade, center
 f "Hey there! It's nice to meet you! If I heard right, your name is %(m)s, right? Did you remember my name?"
 
 "It's a cute girl!"
@@ -84,8 +84,8 @@ f "Yeah, that's it! I was just making sure you were paying attention. It's nice 
 
 menu:
     "As long as you don't slow me down.":
-        hide fsassy
-        show fangry
+        hide f sassy
+        show f angry
         f "Well fine, if you don't want to work with me, I'll go get a different partner."
         "She immediately goes over to the professor and although you can't hear everything, it doesn't sound good for you." 
         "Afterward, the professor comes over and tells you that the two of you would be working with different partners."
@@ -94,12 +94,12 @@ menu:
         scene black with dissolve
         return
     "It is a pleasure to work with you, m'lady.":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
+        hide f sassy at basicfade
+        show f happy at basicfade, left
         f "We should get going before the next class comes in though!"
     "W-Wait, I actually have to work with a girl?!":
-        hide fsassy
-        show fangry
+        hide f sassy
+        show f angry
         f "Well fine, if you don't want to work with me, I'll go get a different partner."
         "She immediately goes over to the professor and although you can't hear everything, it doesn't sound good for you." 
         "Afterward, the professor comes over and tells you that the two of you would be working with different partners."
@@ -108,8 +108,8 @@ menu:
         scene black with dissolve
         return
     "I-It's nice to meet you!":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
+        hide f sassy at basicfade
+        show f happy at basicfade, left
         f "We should get going before the next class comes in though!"
 
 "You notice that you're the last two left in the classroom and students for the next class are about to come in."

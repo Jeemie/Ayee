@@ -5,8 +5,8 @@ show text "Day Three \n The Meltdown" at basicfade with Pause(2.5)
 scene black with dissolve
 
 
-scene bg labroom
-show fangry
+scene bg labroom with dissolve
+show f angry at fastfade
 "The two of you are in the lab room working on your latest assignment. %(f)s hasn't asked for any help in a while, and it's been pretty quiet between you."
 
 "You notice that she hasn't been doing much work, just holding a beaker full of some strange liquid."

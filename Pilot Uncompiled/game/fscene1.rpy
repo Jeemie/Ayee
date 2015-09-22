@@ -48,8 +48,6 @@ f "{i}I really shouldn't be spacing out like that. Did I not get enough sleep la
 
 f "{i}But it's the first day of classes! I shouldn't be tired on the first day.{/i}"
 
-return
-
 f "{i}I'll have to make sure I get enough sleep. That really wasn't a good first impression.{/i}"
 
 p "Alright, we're going to get straight down to business. For this marking period your grades will be divided into three different portions: homework, projects, and the final exam."
@@ -89,7 +87,7 @@ menu:
         return
         
 
-show mshocked
+show m shocked at fastfade
 
 f "Hi there! If I'm correct, then you must be %(m)s. My name's %(f)s and we're gonna be partners!"
 

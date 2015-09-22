@@ -10,7 +10,7 @@ show black behind tree
 "There she is! Wow, I don’t think I got a very good look at her yesterday, but she looks…"
 stop music
 
-show fangry at fastfade,center with moveinleft
+show f angry at fastfade,center with moveinleft
 
 play sound "sfx/objection.wav"
 with vpunch
@@ -29,8 +29,8 @@ m "Sorry! I'm sorry!"
 
 m "A-Ah,no, I guess I must have missed it. I'm really sorry I'm late, so we should {cps=2}...{/cps} get things going, I guess?"
 
-hide fangry at fastfade
-show fhappy at fastfade,center
+hide f angry at fastfade
+show f happy at fastfade,center
 
 f "Yea, you’re right. Well, we’ve already introduced ourselves yesterday, so let’s get down to business!"
 f "I’m free on Wednesdays from 6-8 and then I’m also available at 1, but I have a class at 3 so we might be pressed for time then."
@@ -38,7 +38,7 @@ m "Wednesday at 6 works for me!"
 f "Alright then! I guess we could bring dinner with us or if you're free before that, we can go get some together."
 
 show tree at dim
-show fhappy at dim,center
+show f happy at dim,center
 show text "You can't stop your heart from pounding when you hear that. Going to get dinner together? Just the two of you?" at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade
@@ -47,15 +47,15 @@ play sound "sfx/idea.wav"
 "...{fast}!!"
 "{size=+15}{cps=30}It's almost like a date!{/cps}{/size}"
 show tree at undim
-hide fhappy at fastfade
-show fsassy at fastfade,center
+hide f happy at fastfade
+show f sassy at fastfade,center
 f "I guess that’s everything we really need to cover."
 f "I guess we could have just emailed each other, but this was good anyways."
 m "Do you want to go get something to eat right now?"
 f "What did you just say?"
 m "What did I just say?"
 f "Well, I have to get back to my homework later..but sure! I haven't eaten yet."
-hide fsassy at basicfade with moveoutright
+hide f sassy at basicfade with moveoutright
 show tree at dim
 show text "You let out the breath you hadn’t even known you were holding and smiled." at basicfade,truecenter with Pause(2.5)
 pause 1

@@ -11,8 +11,8 @@ scene black with dissolve
 
 "The one thing they've gotten right is that love can make you do some crazy things..."
 
-scene bg quad
-show fhappy
+scene bg quad with dissolve
+show f happy at basicfade
 f "Hey, %(m)s, where are you going? You're gonna be late! Don't forget that we're meeting at the tree in 5 minutes!"
 
 "And that was the first time I saw her. I guess the movies also got the whole \"love at first sight\" thing too."

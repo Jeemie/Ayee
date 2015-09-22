@@ -87,7 +87,7 @@ with vpunch
 
 "You take a deep breath to quickly calm yourself and turn around to find..."
 
-show fhappy at basicfade, center
+show f happy at basicfade, center
 female "Hey there! It's nice to meet you! If I heard right, your name is %(m)s, right? Did you remember my name?"
 
 "It's a cute girl!"
@@ -96,10 +96,10 @@ female "Hey there! It's nice to meet you! If I heard right, your name is %(m)s, 
 
 m "O-oh, yeah, I d-did! Uhh, yeah, my name's %(m)s, and you're...uhh...you're ...?"
 
-hide fhappy at basicfade
+hide f happy at basicfade
 show olin at dim
 show black behind olin
-show fsassy at basicfade, left with moveinleft
+show f sassy at basicfade, left with moveinleft
 $ persistent.f = renpy.input("Choose a name for the girl:")
 $ persistent.f = persistent.f.strip()
 if persistent.f == "":
@@ -112,14 +112,12 @@ pause 1.0
 hide black
 f "My name is %(f)s."
 
-return
-
 f "Yeah, that's it! I was just making sure you were paying attention. It's nice to meet you! I'm sure we're gonna be great partners. We should get going before the next class comes in, though."
 
 menu:
     "As long as you don't slow me down.":
-        hide fsassy
-        show fangry
+        hide f sassy
+        show f angry
         f "Well fine, if you don't want to work with me, I'll go get a different partner."
         "She immediately goes over to the professor and although you can't hear everything, it doesn't sound good for you." 
         "Afterward, the professor comes over and tells you that the two of you would be working with different partners."
@@ -128,12 +126,12 @@ menu:
         scene black with dissolve
         return
     "It is a pleasure to work with you, m'lady.":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
+        hide f sassy at basicfade
+        show f happy at basicfade, left
         f "We should get going before the next class comes in though!"
     "W-Wait, I actually have to work with a girl?!":
-        hide fsassy
-        show fangry
+        hide f sassy
+        show f angry
         f "Well fine, if you don't want to work with me, I'll go get a different partner."
         "She immediately goes over to the professor and although you can't hear everything, it doesn't sound good for you." 
         "Afterward, the professor comes over and tells you that the two of you would be working with different partners."
@@ -142,8 +140,8 @@ menu:
         scene black with dissolve
         return
     "I-It's nice to meet you!":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
+        hide f sassy at basicfade
+        show f happy at basicfade, left
         f "We should get going before the next class comes in though!"
 
 "You notice that you're the last two left in the classroom and students for the next class are about to come in."

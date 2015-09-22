@@ -6,7 +6,7 @@ scene black with dissolve
 scene olin with dissolve
 
 
-f "{i}College is so much differents.{/i}"
+f "{i}College is so much different.{/i}"
 
 f "{i}In high school my friends and I would all make sure we got seats together. Although it's not like that made a difference, they weren't really my friends.{/i}"
 
@@ -73,7 +73,7 @@ menu:
         scene black with dissolve
         return
         
-show mshocked
+show m shocked at fastfade
 f "Hi there! If I'm correct, then you must be %(m)s. My name's %(f)s and we're gonna be partners!"
 
 m "O-Oh! H-Hey there! Sorry, I wasn't paying too much attention before."

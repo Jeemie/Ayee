@@ -3,7 +3,7 @@ scene black with dissolve
 show text "I'm Late! I'm Late!" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg black
+scene bg black with dissolve
 
 f "{i}Oh no! I don't want to be late on the second day of school! That'll give the wrong impression for sure!{/i}"
 
@@ -13,7 +13,7 @@ f "{i}Wait, isn't that –{/i}"
 
 f "{i}But he shouldn't be here...{/i}"
 
-scene bg quad
+scene bg quad with dissolve
 "You see %(m)s walking into another building."
 
 f "{i}He {b}should{/b} be heading to chemistry.{/i}"

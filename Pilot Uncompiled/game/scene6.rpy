@@ -5,14 +5,14 @@ show text "Day Three \n Work Time" at basicfade with Pause(2.5)
 scene black with dissolve
 
 
-scene bg labroom
-show fangry
+scene bg labroom with dissolve
+show f angry at fastfade
 f "Ahh! I can't understand this at all! Why do we need to figure out how they're going to react? Why don't we just combine them all and see what happens? Isn't that what experimentation is?"
 
 menu:
     "Go for it!":
         "She pours every chemical within reach into a single beaker, an excited smile on her face. You can't help but admire her adventurous attitude and look on in wonder as her experiment bubbles."
-        show fhappy
+        show f happy at basicfade
         f "Look! It's doing something! I told you, experiments should –"
         $ renpy.movie_cutscene("video/boom.mpg")
         show black
@@ -39,7 +39,7 @@ show text "Day Three \n Forming the Bond" at basicfade with Pause(2.5)
 scene black with dissolve
 
 scene bg black
-show fhappy
+show f happy at basicfade
 f "So hey...There's this concert in Boston this week that I'd love to see, but most of my friends are going home over the weekend."
 
 m "Dang, that really sucks. Is there anybody else you can ask?"
@@ -56,7 +56,7 @@ m "O-Oh! Y-Yeah! I'd love to – I mean, that sounds pretty awesome. Of course I
 
 "She even convinced you to join the fencing club, and you've made even more friends there. It seems like things are going right in life."
 
-show fhappy
+show f happy at basicfade
 m "H-Hey, %(f)s, there's something I want to tell you..."
 
 f "Hmm? What is it? Is it about the lab?"
