@@ -3,6 +3,11 @@ scene black with dissolve
 show text "Where It All Began" at basicfade with Pause(2.5)
 scene black with dissolve
 
+stop music
+play music "music/start.mp3"
+
+$ f = persistent.f
+$ m = persistent.m
 "I'm not a guy who's very experienced with love."
 
 "Well, even if I were, I'm not sure how anybody is supposed to deal with being hit by it."
@@ -12,7 +17,7 @@ scene black with dissolve
 "The one thing they've gotten right is that love can make you do some crazy things..."
 
 scene bg quad with dissolve
-show f happy at basicfade
+show fhappy at basicfade,center
 f "Hey, %(m)s, where are you going? You're gonna be late! Don't forget that we're meeting at the tree in 5 minutes!"
 
 "And that was the first time I saw her. I guess the movies also got the whole \"love at first sight\" thing too."

@@ -8,23 +8,26 @@ scene bg quad with dissolve
 
 "You notice someone sitting on a bench, alone, next to the path you're walking on. As you get closer, you recognize %(m)s sitting and looking serious."
 
-show n sad at basicfade
+show nsad at basicfade, center
 f "Hey, %(m)s, what's up? Why are you sitting out here all alone?"
 
-hide n sad at fastfade
-show n angry at fastfade
+hide nsad at fastfade
+show nangry at fastfade, center
 m "I don't want to talk to you. Why don't you get out of here?"
 
 f "W-What? What's wrong??"
 
 m "It's nothing."
 
-hide n angry
+hide nangry
 "%(m)s walks off towards one of the dorm buildings and you're left wondering just what had happened to him. Maybe it was something serious."
 
 "It seemed like he didn't want you to pry into it, though, so you decide to leave it alone. If he wanted to tell you, he would."
 
-"It disappoints you a bit that he didn't, but you don't know why."
+show text "It disappoints you a bit that he didn't, but you don't know why." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
 
 jump fscene8

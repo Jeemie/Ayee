@@ -1,0 +1,29 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 7: expected 'name' not found.
+    show "images/bg1.png" at mmenu
+         ^
+
+File "game/script.rpy", line 9: expected 'name' not found.
+    show "images/bg2.png" at mmenu
+         ^
+
+File "game/script.rpy", line 11: expected 'name' not found.
+    show "images/bg4.png" at mmenu2
+         ^
+
+File "game/script.rpy", line 13: expected 'name' not found.
+    show "images/white.jpg" at mmenu2
+         ^
+
+File "game/script.rpy", line 15: expected 'name' not found.
+    show "images/bg3.png" at mmenu4
+         ^
+
+File "game/script.rpy", line 17: expected 'name' not found.
+    show "images/heart.png" at mmenu5
+         ^
+
+Ren'Py Version: Ren'Py 6.99.6.739

@@ -36,7 +36,7 @@ image mainmenu2:
         repeat
     
 image eileen happy = "eileen_happy.png"
-image bg tree = "images/big_tree.jpg"
+image bg tree = "images/tree.jpg"
 image bg black = "images/black.jpg"
 image bg olin = "images/olin.jpg"
 image bg labroom = "images/goddard_lab.jpg"
@@ -61,6 +61,12 @@ image nangry = "images/twin_angry.png"
 image nshocked = "images/twin_shocked.png"
 
 image logo = "images/logo.png"
+
+image bg1 = "images/bg1.png"
+image bg2 = "images/bg2.png"
+image bg3 = "images/bg3.png"
+image bg4 = "images/bg4.png"
+image heart = "images/heart.png"
 
 image placeholder animated:
     im.Scale("images/tryagain.png", 400, 800)
@@ -91,8 +97,34 @@ transform basicfade:
 transform dim:
     alpha 1.0
     linear 1.0 alpha 0.5
+
+transform mmenu:
+    alpha 0.0
+    linear 1.0 alpha 1.0
+    pause 1.0
+    linear 0.5 alpha 0.0
+    pause 1.0
     
+transform mmenu2:
+    linear 1.0 alpha 1.0
+    pause 1.0
+    linear 0.5 alpha 0.0
+
+transform mmenu3:
     
+    linear 0.50 alpha 1.0
+    linear 0.25 alpha 0.0
+    
+transform mmenu4:
+    linear 0.5 alpha 1.0
+    
+transform mmenu5:
+    linear 1.0 alpha 0.0
+    pause 0.5
+    linear 1.0 alpha 1.0
+    pause 0.5
+    repeat
+        
 transform undim:
     alpha 0.5
     linear 1.0 alpha 1.0

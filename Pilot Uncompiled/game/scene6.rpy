@@ -6,17 +6,20 @@ scene black with dissolve
 
 
 scene bg labroom with dissolve
-show f angry at fastfade
+show fangry at fastfade
 f "Ahh! I can't understand this at all! Why do we need to figure out how they're going to react? Why don't we just combine them all and see what happens? Isn't that what experimentation is?"
 
 menu:
     "Go for it!":
         "She pours every chemical within reach into a single beaker, an excited smile on her face. You can't help but admire her adventurous attitude and look on in wonder as her experiment bubbles."
-        show f happy at basicfade
+        show fhappy at basicfade,center
         f "Look! It's doing something! I told you, experiments should –"
+        hide labroom at fastfade
+        show black at fastfade
         $ renpy.movie_cutscene("video/boom.mpg")
-        show black
-        "There isn't any time to react as the solution bubbles to a climax and explodes in her face. You can't feel anything as you're caught in the blast."
+        show text "There isn't any time to react as the solution bubbles to a climax and explodes in her face. You can't feel anything as you're caught in the blast." at basicfade,center
+        pause 2.0
+        hide text basicfade
         scene black with dissolve
         show text "Game Over" at basicfade with Pause(2.5)
         scene black with dissolve
@@ -39,7 +42,7 @@ show text "Day Three \n Forming the Bond" at basicfade with Pause(2.5)
 scene black with dissolve
 
 scene bg black
-show f happy at basicfade
+show fhappy at basicfade,center
 f "So hey...There's this concert in Boston this week that I'd love to see, but most of my friends are going home over the weekend."
 
 m "Dang, that really sucks. Is there anybody else you can ask?"
@@ -56,7 +59,6 @@ m "O-Oh! Y-Yeah! I'd love to – I mean, that sounds pretty awesome. Of course I
 
 "She even convinced you to join the fencing club, and you've made even more friends there. It seems like things are going right in life."
 
-show f happy at basicfade
 m "H-Hey, %(f)s, there's something I want to tell you..."
 
 f "Hmm? What is it? Is it about the lab?"
@@ -67,10 +69,19 @@ m "Umm...well..."
 
 m "Yeah, it is actually about the lab..."
 
-"You begin to notice some things about %(f)s that you hadn't before; how caring she can be, how she always makes sure all her food is completely separated, how she always makes you laugh even just by laughing herself."
+show text "You begin to notice some things about %(f)s that you hadn't before; how caring she can be, how she always makes sure all her food is completely separated, how she always makes you laugh even just by laughing herself." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
-"There are some days however where you're not sure that she feels the same way about you. Sometimes she'll give you the cold shoulder and won't text you back."
+show text "There are some days however where you're not sure that she feels the same way about you. Sometimes she'll give you the cold shoulder and won't text you back." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
-"When you ask her if she's mad at you, she just sighs and replies that nothing's wrong. After that, things tend to go back to normal for a while until it happens again. You can never tell what's bothering her though, until one day..."
+show text "When you ask her if she's mad at you, she just sighs and replies that nothing's wrong. After that, things tend to go back to normal for a while until it happens again. You can never tell what's bothering her though, until one day..." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
 jump scene7

@@ -5,6 +5,11 @@
 label start:
 
 
+
+show bg3 at mmenu4
+
+show heart at mmenu5
+
 menu:
     "Play Male Side":
         if persistent.beat_female == True:

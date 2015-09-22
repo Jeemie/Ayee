@@ -1,3 +1,8 @@
+V1.5
++More transitions
++Game Menu background
++Story Selection actually has a background
+
 Version 1.4a
 +Added transitions to character images and scene changes.
 +Fixed image hiding bugs.

@@ -4,7 +4,7 @@ show text "Thick Like Cool Whip" at basicfade with Pause(2.5)
 scene black with dissolve
 
 scene bg tree with dissolve
-show f sad at basicfade
+show fsad at basicfade,center
 n "Hey, %(f)s, what's up?"
 
 f "Oh, h-hey %(m)s, nothing really. Who's that you're with?"
@@ -13,14 +13,14 @@ n "Oh, that's just this girl whom I'm helping with calculus. You know, she reall
 
 f "That's...so nice of you. I'm glad you could do that. I've got to go now, though."
 
-hide f sad
+hide fsad
 n "I hadn't thought of myself as crazy at the time. I was just mad."
 
 n "Madly in love, that is. Get it?"
 
 n "I thought that if I was gonna get the girl, I had to make sure that she wasn't already taken. Even if she was taken by another me."
 
-show bg black
+show bg black at basicfade
 n "Looking back, maybe I should have questioned why we looked the same anyway..."
 
 n "But that doesn't matter anymore. The only thing that matters is the final choice I have to make."
@@ -90,5 +90,3 @@ menu:
                 "For what exists when there is no love?"
                 return
 
-
-return

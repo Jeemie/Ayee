@@ -8,7 +8,7 @@ scene black with dissolve
 scene bg black with dissolve
 "Today is now Tuesday and you have your chemistry class again. The thought of seeing %(f)s again makes you get to class a bit earlier than you normally would."
 
-scene bg classroom
+scene bg olin
 "When you get there, you notice that she hasn't arrived yet, and there's hardly anyone else there. Since you have no idea where she was sitting the other day, finding a seat next to her would be nearly impossible."
 
 "You decide to go back to the seat you were originally sitting in and wait for class to start. Last night you had trouble sleeping, and you're paying for it now. You feel so tired that your eyes keep closing against your will."
@@ -18,7 +18,7 @@ with vpunch
 
 "You jump in your seat, startled at the sudden voice. Looking around, there are many more people in the room now, and sitting next to you is %(f)s."
 
-show f happy at basicfade
+show fhappy at basicfade,center
 f "Hi there, %(m)s. I'm glad I could scare you awake! It's pretty funny to make you jump. Did you not sleep last night?"
 
 m "H-Hey, %(f)s! Uh, no, I didn't sleep very well for some reason...I think it has to do with the heat here."

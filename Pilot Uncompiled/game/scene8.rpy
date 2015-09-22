@@ -6,7 +6,7 @@ scene black with dissolve
 
 
 scene bg tree with dissolve
-show f angry at fastfade
+show fangry at fastfade, center
 m "What are you thinking??"
 
 f "What am I thinking? I'm thinking you're a jerk!"
@@ -23,14 +23,15 @@ m "{i}Well, that's because I am clueless...{/i}"
 
 menu:
     "I think you act strangely each time I see you, too.":
-        show fshocked at fastfade
+        show f shocked at fastfade,center
     "I really don't understand. Are you sure you're alright?":
-        show fshocked at fastfade
+        show f shocked at fastfade,center
     "Maybe you're mistaking someone else for me?":
-        show fshocked at fastfade
+        show f shocked at fastfade,center
 
 f "What?"
-show f angry at fastfade
+hide f shocked at fastfade
+show fangry at fastfade,center
 f "What? No, this isn't about me! Ugh, I can't believe you sometimes!"
 
 "She storms off in a fit of rage. You're left to ponder exactly what just happened."
@@ -44,7 +45,6 @@ if persistent.beat_female == True:
     $ beat_male =True
     $ persistent.epilogue = True
     return
-
 elif persistent.beat_male != True:
     $ persistent.beat_female = True
     return

@@ -5,8 +5,8 @@ scene black with dissolve
 
 scene olin with dissolve
 
-$ f = persistent.f
-$ m = persistent.m
+stop music
+play music "music/start.mp3"
 
 female "{i}College is so much different.{/i}"
 
@@ -68,7 +68,7 @@ f "Hmm? How exactly do you pronounce this? Well, the name must be %(m)s."
 
 "You take a look around the classroom and notice that most everyone has already paired up with their partners. There is only one guy left sitting in his desk, seemingly not paying attention to anything."
 
-show mdistant
+show msad
 f "Hmm...How to approach this..."
 
 menu:
@@ -87,7 +87,7 @@ menu:
         return
         
 
-show m shocked at fastfade
+show mshocked at fastfade
 
 f "Hi there! If I'm correct, then you must be %(m)s. My name's %(f)s and we're gonna be partners!"
 
@@ -105,6 +105,9 @@ if persistent.m == "":
 $ m = persistent.m
 scene olin at undim
 pause 1.0
+
+hide mshocked at fastfade
+show mhappy at basicfade
 
 f "Well, I hope you don't do that when we're working, too – 'cause I know nothing about chemistry, so it'd be bad if neither of us did the work."
 
@@ -124,9 +127,15 @@ m "O-OK, that works for me! I'll see you then."
 
 f "Yeah, bye for now!"
 
-"He seemed a bit strange, as if he were really nervous, but you have no idea why. You guess it must just be because it's the first day of classes."
+show text "He seemed a bit strange, as if he were really nervous, but you have no idea why. You guess it must just be because it's the first day of classes." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
-"Hopefully he isn't hard to deal with..."
+show text "Hopefully he isn't hard to deal with..." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
 jump fscene2
 

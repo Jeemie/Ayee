@@ -3,18 +3,23 @@ scene black with dissolve
 show text "Chem Time!" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg lab
-show m happy at basicfade
+scene bg labroom
+show mhappy at basicfade,center
 f "Ahh! I can't understand this at all! Why do we need to figure out how they're going to react? Why don't we just combine them all and see what happens? Isn't that what experimentation is?"
 
 menu:
     "Go for it!":
         "You pour every chemical within reach into a single beaker, an excited smile on your face. You can't help but admire your handywork as your experiment starts to bubble."
-        show m shocked at fastfade
+        hide mhappy at fastfade
+        show mshocked at fastfade, center
         f "Look! It's doing something! I told you, {b}that's{/b} how experiments should be!"
         m "Wait, what did you put –"
+        hide labroom at fastfade
+        show black at fastfade
         $ renpy.movie_cutscene("video/boom.mpg")
-        "There isn't any time to react as the solution bubbles to a climax and explodes in your face. You can't feel anything as you're caught in the blast."
+        show text "There wasn't any time to react as the solution bubbles to a climax and explodes in your face. You can't feel anything as you're caught in the blast." at basicfade, center
+        pause 2.0
+        hide text at basicfade
         scene black with dissolve
         show text "Game Over" at basicfade with Pause(2.5)
         scene black with dissolve
@@ -28,8 +33,14 @@ m "Don't worry. Since we're partners, I'll be here to help, and I'll make sure y
 
 f "You would? Ohh, thank you so much, %(m)s! That's so nice of you!"
 
-"You then go over and give him a hug in thanks. You don't notice, but you accidentally squeeze him just a little too hard, nearly cracking a couple bones, but it seems he enjoys it nonetheless. You almost think you saw his cheeks turn a little red..."
+show text "You then go over and give him a hug in thanks. You don't notice, but you accidentally squeeze him just a little too hard, nearly cracking a couple bones, but it seems he enjoys it nonetheless. You almost think you saw his cheeks turn a little red..." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
-"The rest of your lab time is spent performing various infusions of chemicals as %(m)s explains their properties to you. You feel a warm connection between the two of you, and you think it might not just be you."
+show text "The rest of your lab time is spent performing various infusions of chemicals as %(m)s explains their properties to you. You feel a warm connection between the two of you, and you think it might not just be you." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
 jump fscene9

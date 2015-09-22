@@ -10,7 +10,7 @@ show black behind tree
 "There she is! Wow, I don’t think I got a very good look at her yesterday, but she looks…"
 stop music
 
-show f angry at fastfade,center with moveinleft
+show fangry at fastfade,center with moveinleft
 
 play sound "sfx/objection.wav"
 with vpunch
@@ -31,7 +31,7 @@ m "A-Ah,no, I guess I must have missed it. I'm really sorry I'm late, so we shou
 
 hide f angry at fastfade
 show f happy at fastfade,center
-
+play music "music/start.mp3"
 f "Yea, you’re right. Well, we’ve already introduced ourselves yesterday, so let’s get down to business!"
 f "I’m free on Wednesdays from 6-8 and then I’m also available at 1, but I have a class at 3 so we might be pressed for time then."
 m "Wednesday at 6 works for me!"

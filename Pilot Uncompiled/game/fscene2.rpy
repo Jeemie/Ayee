@@ -8,12 +8,17 @@ show bg quad with dissolve
 
 "You get halfway across the quad when you notice someone walking in the opposite direction."
 
-show n happy at fastfade
+show nhappy at fastfade,center
 f "Hey %(m)s, where are you going? You're gonna be late! Don't forget that we're meeting at the tree in 5 minutes!"
 
-hide n happy
-show n shocked at fastfade
-"He stops as he's walking by and turns to you for a moment. You keep moving past him and give him a smile. He probably just has to stop at his room first or something."
+hide nhappy at fastfade
+show nshocked at fastfade,left 
+show quad at dim
+show black behind quad
+show text "He stops as he's walking by and turns to you for a moment. You keep moving past him and give him a smile. He probably just has to stop at his room first or something." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
 
 

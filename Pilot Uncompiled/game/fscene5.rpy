@@ -18,6 +18,9 @@ scene bg quad with dissolve
 
 f "{i}He {b}should{/b} be heading to chemistry.{/i}"
 
-"You have no time to stop, though, as you press onward to class."
+show text "You have no time to stop, though, as you press onward to class." at basicfade,truecenter with Pause(2.5)
+pause 1
+hide text at basicfade
+pause 1.0
 
 jump fscene6
