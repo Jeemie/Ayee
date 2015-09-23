@@ -5,7 +5,7 @@ scene black with dissolve
 
 scene olin with dissolve
 
-m "{i}It's the first day of classes. I remember facing this day so many times in high school.{/i}"
+m "{i}It's the first day of class. I remember facing this day so many times in high school.{/i}"
 
 m "{i}Back then, I wasn't so prepared. Everything seemed so intimidating, and everyone had their own friends.{/i}"
 
@@ -19,7 +19,7 @@ m "{i}I thought Worcester Polytechnic Institute would be the perfect school. I m
 
 m "{i}I'm determined to change that though! Starting now, I'll make a ton of friends! I'll go out and have fun and make the most of my time!{/i}"
 
-p "Hello? I was asking you your first name."
+p "Hello? I was asking you for your first name."
 
 "The teacher is staring at you with a piece of paper in her hand. It seems to be a checklist of people's names in the chemistry class."
 
@@ -62,23 +62,45 @@ m "{i}Crap! Did she announce everyone's partner? I didn't even hear it! I was wa
 
 m "{i}How am I supposed to find my partner then? And I still don't even know who it is. Maybe they'll find me...{/i}"
 
-"There's a slight tap on your back, and your heart involuntarily jumps in your chest. You're so on edge today that you could have a heart attack at any time."
-play sound "sfx/punch.mp3"
-pause 0.1
-with vpunch
+show olin at dim
+show black behind olin
+show text "There's a slight tap on your back, and your heart involuntarily jumps in your chest. You're so on edge today that you could have a heart attack at any time." at basicfade,truecenter with Pause(2.5)
+$ renpy.pause(3.0, hard='True')
+hide text at basicfade
 
-"You take a deep breath to quickly calm yourself and turn around to find..."
+$ renpy.pause(1.0, hard='True')
+show text "You take a deep breath to quickly calm yourself and turn around to find..." at basicfade,truecenter with Pause(2.5)
+$ renpy.pause(3.0, hard='True')
+hide text at basicfade
+pause 1.0
+show olin at undim
+pause 1.0
+hide black
 
 show fhappy at basicfade, center
-f "Hey there! It's nice to meet you! If I heard right, your name is %(m)s, right? Did you remember my name?"
+female "Hey there! It's nice to meet you! If I heard right, your name is %(m)s, right? Did you remember my name?"
 
-"It's a cute girl!"
+hide fhappy at fastfade
+show olin at dim
+show black behind olin
+show text "It's a cute girl!" at basicfade,truecenter with Pause(2.5)
+$ renpy.pause(1.0, hard='True')
+hide text at basicfade
 
-"Your heart is beating out of your chest as you throw out the first name that comes to mind."
+$ renpy.pause(1.0, hard='True')
+show text "Your heart is beating out of your chest as you throw out the first name that comes to mind." at basicfade,truecenter with Pause(2.5)
+$ renpy.pause(3.0, hard='True')
+hide text at basicfade
+pause 1.0
+show olin at undim
+pause 1.0
+hide black
+pause 1.0
+show fhappy at basicfade,center
 
 m "O-oh, yeah, I d-did! Uhh, yeah, my name's %(m)s, and you're...uhh...you're ...?"
 
-f "My name is %(f)s."
+m "Your name is %(f)s."
 
 f "Yeah, that's it! I was just making sure you were paying attention. It's nice to meet you! I'm sure we're gonna be great partners. We should get going before the next class comes in, though."
 
@@ -110,7 +132,17 @@ menu:
         show fhappy at basicfade, left
         f "We should get going before the next class comes in though!"
 
-"You notice that you're the last two left in the classroom and students for the next class are about to come in."
+hide fhappy at fastfade
+show olin at dim
+show black behind olin
+show text "You notice that you're the last two left in the classroom and students for the next class are about to come in."at basicfade,truecenter with Pause(2.5)
+$ renpy.pause(3.0, hard='True')
+hide text at basicfade
+pause 1.0
+show olin at undim
+pause 1.0
+hide black
+show fhappy at basicfade,left
 
 f "So, we should plan a time to get together and plan everything out."
 
@@ -122,6 +154,13 @@ m "O-Ok, that works for me! I'll see you then."
 
 f "Yeah, bye for now."
 
-"You completely forget that you were going to go to the robotics club meeting at 5:00, but you decide that that's not important anymore."
+hide fhappy at fastfade
+
+pause 0.5
+show olin at dim
+show black behind olin
+show text "You completely forget that you were going to go to the robotics club meeting at 5:00, but you decide that that's not important anymore."
+$ renpy.pause(3.0, hard='True')
+hide text at basicfade
 
 jump scene2

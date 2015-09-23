@@ -36,13 +36,13 @@ image mainmenu2:
         repeat
     
 image eileen happy = "eileen_happy.png"
-image bg tree = "images/tree.jpg"
-image bg black = "images/black.jpg"
-image bg olin = "images/olin.jpg"
-image bg labroom = "images/goddard_lab.jpg"
-image bg dorm = "images/dorm.jpg"
-image bg dininghall = "images/daka.jpg"
-image bg quad = "images/quad.jpg"
+image tree = "images/tree.jpg"
+image black = "images/black.jpg"
+image olin = "images/olin.jpg"
+image labroom = "images/goddard_lab.jpg"
+image dorm = "images/dorm.jpg"
+image dininghall = "images/daka.jpg"
+image quad = "images/quad.jpg"
 
 image fsassy = "images/female_sassy.png"
 image fhappy = "images/female_happy.png"
@@ -126,7 +126,6 @@ transform mmenu5:
     repeat
         
 transform undim:
-    alpha 0.5
     linear 1.0 alpha 1.0
     
 transform fastfade:

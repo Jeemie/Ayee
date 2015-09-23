@@ -1,0 +1,23 @@
+-Option to delete persistent data in-game menu
+
+-Option to replay story with choosing new names again.
+
+
+-Fix fade out after name change (scene1 male choosing)
+
+-Think of more clear way to show character's monologue to themselves
+-fix line in female_laughing
+-fix female_happy
+
+
+-Grab pictures from camera (jimmy)
+-Finish the art sets. 
+
+-Find explosion sound effect (Preferably make our own)
+-Game over sound
+-Possibly more music. Eg: Intense music for angry scenes.
+
+Optional:
+
+VOICE OVERS! Because why not? We have time. We should have time. 
+ -If we have time.... COMPLETE VOICE ACTING!

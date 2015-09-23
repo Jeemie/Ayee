@@ -34,4 +34,5 @@ if persistent.beat_male ==True:
     return
 elif persistent.beat_male != True:
     $ persistent.beat_female =True
+    $ persistent.beat_game =True
     return

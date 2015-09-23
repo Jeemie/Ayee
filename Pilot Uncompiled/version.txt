@@ -1,3 +1,11 @@
+V1.6
+Male Story polished up more.
+Fixed some images.
+Fixed some transitions.
+Added new game + menu
+
+Todo: Check todo txt (WIP)
+
 V1.5
 +More transitions
 +Game Menu background

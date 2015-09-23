@@ -10,13 +10,13 @@ show black at basicfade
 
 play sound "sfx/objection.wav"
 with vpunch
-f "{cps=30}{size=+10}There you are!{/size}{/cps}{nw}"
+f "{cps=20}{size=+10}There you are!{/size}{/cps}{nw}"
 play sound "sfx/objection.wav"
 with hpunch
-f "{cps=30}{size=+10}You're late!{/size}{/cps}{nw}"
+f "{cps=20}{size=+10}You're late!{/size}{/cps}{nw}"
 play sound "sfx/objection.wav"
 with vpunch
-f "{cps=15}{size=+10}I'll have you know my time is very precious!{/size}{/cps}"
+f "{cps=18}{size=+10}I'll have you know {size=+5}my time is very precious!{/size}{/size}{/cps}"
 hide black at fastfade
 scene bg tree with dissolve
 m "Sorry! I'm sorry!"

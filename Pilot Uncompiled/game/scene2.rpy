@@ -6,11 +6,19 @@ scene black with dissolve
 
 scene dorm with dissolve
 
-"It’s almost 5:00 pm and you’re sitting in your room waiting to head out to meet %(f)s.
- It’s a good thing your roommates are out or they might get annoyed with all the pacing you’re doing."
+show dorm at dim
+show black behind dorm
+show text "It’s almost 5:00 pm and you’re sitting in your room waiting to head out to meet her. It’s a good thing your roommates are out or they might get annoyed with all the pacing you’re doing." at basicfade,truecenter
+$ renpy.pause(3.5, hard='True')
+hide text at basicfade
+show dorm at undim
+pause 1.0
+hide black
 
 m "It’s nothing to be worried about, you’re supposed to be there and you’ll talk about… things. And if not… There’s always chemistry work to fall back on."
 
+show dorm at dim
+show black behind dorm
 show text "But you can’t help thinking how cute she was..." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade
@@ -24,6 +32,9 @@ pause 1
 hide text at basicfade
 pause 0.5
 m "{cps=1}...{/cps}{nw}"
+show dorm at undim
+pause 1.0
+hide black
 
 play sound "sfx/dramaticpunch.wav"
 with vpunch

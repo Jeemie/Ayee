@@ -5,7 +5,7 @@ show text "Calamity" at basicfade with Pause(2.5)
 scene black with dissolve
 
 
-scene bg tree with dissolve
+scene tree with dissolve
 show fangry at fastfade, center
 m "What are you thinking??"
 
@@ -23,23 +23,32 @@ m "{i}Well, that's because I am clueless...{/i}"
 
 menu:
     "I think you act strangely each time I see you, too.":
-        show f shocked at fastfade,center
+        hide fangry at fastfade
+        show fsad at fastfade,center
     "I really don't understand. Are you sure you're alright?":
-        show f shocked at fastfade,center
+        hide fangry at fastfade
+        show fsad at fastfade,center
     "Maybe you're mistaking someone else for me?":
-        show f shocked at fastfade,center
+        hide fangry at fastfade
+        show fsad at fastfade,center
 
 f "What?"
-hide f shocked at fastfade
+hide fsad at fastfade
 show fangry at fastfade,center
 f "What? No, this isn't about me! Ugh, I can't believe you sometimes!"
+hide fangry at fastfade
 
-"She storms off in a fit of rage. You're left to ponder exactly what just happened."
+show tree at dim
+show black behind tree
 
-m "{i}Could it have really been something that I did? But everything had seemed to be going so well.{/i}"
-m "{i}And I was even going to ask her out if we got a good grade on our assignment!{/i}"
-m "{i}Have I really been acting differently though?{/i}"
-m "GAHHH! I don't understand women at all!"
+show text "She storms off in a fit of rage. You're left to ponder exactly what just happened." at basicfade, truecenter
+pause 2.0
+hide text at basicfade
+
+"{i}Could it have really been something that I did? But everything had seemed to be going so well.{/i}"
+"{i}And I was even going to ask her out if we got a good grade on our assignment!{/i}"
+"{i}Have I really been acting differently though?{/i}"
+"GAHHH! I don't understand women at all!"
 
 if persistent.beat_female == True:
     $ beat_male =True
@@ -47,4 +56,6 @@ if persistent.beat_female == True:
     return
 elif persistent.beat_male != True:
     $ persistent.beat_female = True
+    $ persistent.beat_game =True
     return
+    
