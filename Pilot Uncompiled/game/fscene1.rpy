@@ -64,11 +64,11 @@ p "Now, I'm going to leave the paper here on the blackboard. You may find your n
 
 "You look up your own name. Listed right next to your name is your partner's."
 
-f "Hmm? How exactly do you pronounce this? Well, the name must be %(m)s."
+f "Hmm? How exactly do you pronounce this? Well, the name must be .."
 
 "You take a look around the classroom and notice that most everyone has already paired up with their partners. There is only one guy left sitting in his desk, seemingly not paying attention to anything."
 
-show msad
+show msad at fastfade,center
 f "Hmm...How to approach this..."
 
 menu:
@@ -86,8 +86,8 @@ menu:
         scene black with dissolve
         return
         
-
-show mshocked at fastfade
+hide msad at fastfade
+show mshocked at fastfade, center
 
 f "Hi there! If I'm correct, then you must be %(m)s. My name's %(f)s and we're gonna be partners!"
 
@@ -103,7 +103,7 @@ if persistent.m == "":
     $ m = persistent.m
     "My name is %(m)s!"
 $ m = persistent.m
-show olin at undim
+show olin with dissolve
 pause 1.0
 
 hide mshocked at fastfade

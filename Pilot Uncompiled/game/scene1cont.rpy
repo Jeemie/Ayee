@@ -3,6 +3,9 @@ scene black with dissolve
 show text "Day One \n Chemistry Class" at basicfade with Pause(2.5)
 scene black with dissolve
 
+$ f = persistent.f
+$ m = persistent.m
+
 scene olin with dissolve
 
 m "{i}It's the first day of class. I remember facing this day so many times in high school.{/i}"

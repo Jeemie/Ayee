@@ -3,7 +3,7 @@ scene black with dissolve
 show text "I'm Late! I'm Late!" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg black with dissolve
+scene black with dissolve
 
 f "{i}Oh no! I don't want to be late on the second day of school! That'll give the wrong impression for sure!{/i}"
 

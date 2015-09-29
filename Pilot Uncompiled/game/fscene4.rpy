@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Dinner Date" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg dininghall with dissolve
+scene dininghall with dissolve
 show mhappy at basicfade, center
 f "No way! You were a championship fencer?"
 
@@ -61,6 +61,10 @@ f "{i}It's fun talking with %(m)s. I don't want to seem too mean though. I'm not
 
 hide mshocked at fastfade
 show mhappy at basicfade,center
+
+show dininghall at fastfade
+show black behind dininghall
+show dininghall at dim
 show text "A bit later, you both check the time and find that you've been in the dining hall talking for 2 hours. You both get up in a hurry and exchange phone numbers before heading out. You fall asleep tonight thinking of how different people are in college than in high school – and it's a good different." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade

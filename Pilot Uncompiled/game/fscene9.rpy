@@ -4,7 +4,7 @@ show text "Kaboom" at basicfade with Pause(2.5)
 scene black with dissolve
 
 
-scene bg labroom with dissolve
+scene labroom with dissolve
 show mhappy at fastfade, center
 show text "It's Tuesday once again after three weeks of college. You and %(m)s are back in the chemistry lab. Neither of you is doing much work, though." at basicfade,truecenter with Pause(2.5)
 pause 1
