@@ -4,9 +4,15 @@ show text "First Meeting at the Tree" at basicfade with Pause(2.5)
 scene black with dissolve
 
 show black at basicfade
-"It's now 5:05 and you're standing at the tree waiting for %(m)s to arrive. You expected he was going to be late based on how surprised he seemed when you passed him."
 
-"You got the feeling he was the kind of guy who wouldn't do that on purpose. Still, it couldn't hurt to tease him a little when he did show up. Speaking of which..."
+show text "It's now 5:05 and you're standing at the tree waiting for %(m)s to arrive. You expected he was going to be late based on how surprised he seemed when you passed him." at basicfade,truecenter with Pause(2.5)
+pause 1
+$ renpy.pause(2, hard='True')
+hide text at basicfade
+show text "You got the feeling he was the kind of guy who wouldn't do that on purpose. Still, it couldn't hurt to tease him a little when he did show up. Speaking of which..." at basicfade,truecenter with Pause(2.5)
+pause 1
+$ renpy.pause(2, hard='True')
+hide text at basicfade
 
 play sound "sfx/objection.wav"
 with vpunch
@@ -18,7 +24,8 @@ play sound "sfx/objection.wav"
 with vpunch
 f "{cps=18}{size=+10}I'll have you know {size=+5}my time is very precious!{/size}{/size}{/cps}"
 hide black at fastfade
-scene bg tree with dissolve
+show tree at basicfade
+show black behind tree
 m "Sorry! I'm sorry!"
 
 f "I knew you weren't gonna make it in time. Didn't you hear me before?"
@@ -44,6 +51,7 @@ m "Do you want to go get something to eat right now?"
 
 f "Well, I have to get back to my homework later, but sure! I haven't eaten yet."
 
+show tree at dim
 show text "{i}Wait...{/i}" at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade

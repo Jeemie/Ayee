@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Bigger Kaboom" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg tree with dissolve
+scene tree with dissolve
 show mangry at fastfade, center
 m "What are you thinking??"
 
@@ -22,17 +22,36 @@ m "Well, it's seems like you're the one who's different every time I see you."
 f "What?"
 f "What? No, this isn't about me! Ugh, I can't believe you sometimes!"
 
-"You storm off in a fit of rage and he doesn't dare to follow you again. You feel as though you're not in control of your body. Your mind tells you he did nothing wrong."
 
-"But your heart tells your mind that it's dead wrong."
+hide mangry at fastfade
+show tree at fastfade
+show black behind tree
+show tree at dim
+show text "You storm off in a fit of rage and he doesn't dare to follow you again. You feel as though you're not in control of your body. Your mind tells you he did nothing wrong." at basicfade,truecenter with Pause(2.5)
+pause 1
+$ renpy.pause(2, hard='True')
+hide text at basicfade
 
-"Unfortunately, you're caught between the two as they rage a war inside."
+
+show text "But your heart tells your mind that it's dead wrong." at basicfade,truecenter with Pause(2.5)
+pause 1
+$ renpy.pause(2, hard='True')
+hide text at basicfade
+
+
+show text "Unfortunately, you're caught between the two as they rage a war inside." at basicfade,truecenter with Pause(2.5)
+pause 1
+$ renpy.pause(2, hard='True')
+hide text at basicfade
+
 
 if persistent.beat_male ==True:
     $ persistent.beat_female =True
     $ persistent.epilogue =True
+    jump credits
     return
 elif persistent.beat_male != True:
     $ persistent.beat_female =True
     $ persistent.beat_game =True
+    jump credits
     return

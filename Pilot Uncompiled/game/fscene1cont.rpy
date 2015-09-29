@@ -104,6 +104,10 @@ m "O-OK, that works for me! I'll see you then."
 
 f "Yeah, bye for now!"
 
+show olin fastfade
+show black behind olin
+show olin dim
+
 show text "He seemed a bit strange, as if he were really nervous, but you have no idea why. You guess it must just be because it's the first day of classes." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade

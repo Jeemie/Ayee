@@ -3,7 +3,9 @@ scene black with dissolve
 show text "Class Time Rerun" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg olin with dissolve
+show olin with dissolve
+show black behind olin
+show olin at dim
 show text "You break into your classroom with a minute to spare and find that everyone else has made it before you." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade
@@ -21,6 +23,7 @@ pause 1.0
 
 f "Somebody must have had a rough night."
 
+show olin at fastfade
 show mshocked at fastfade, center
 f "Hi there, %(m)s. I'm glad I could scare you awake! It's pretty funny to make you jump. Did you not sleep last night?"
 
@@ -34,6 +37,7 @@ m "Yeah, you seem perfectly fine in the heat. Was it very hot where you came fro
 
 f "I lived in North Carolina most of my life, so it was pretty hot for most of the year. My grandparents live in Massachusetts though, so I've been up here many times, especially in the winter, when it's full of snow."
 
+show olin at dim
 show text "As he's about to respond, the professor walks into the room and calls for everybody's attention. The class goes by quickly. You're surprised %(m)s hasn't fallen asleep at all." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade

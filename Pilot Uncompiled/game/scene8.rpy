@@ -53,9 +53,11 @@ hide text at basicfade
 if persistent.beat_female == True:
     $ beat_male =True
     $ persistent.epilogue = True
+    jump credits
     return
 elif persistent.beat_male != True:
     $ persistent.beat_female = True
     $ persistent.beat_game =True
+    jump credits
     return
     

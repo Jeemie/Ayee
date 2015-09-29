@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Chem Time!" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene bg labroom
+scene labroom
 show mhappy at basicfade,center
 f "Ahh! I can't understand this at all! Why do we need to figure out how they're going to react? Why don't we just combine them all and see what happens? Isn't that what experimentation is?"
 
@@ -33,6 +33,8 @@ m "Don't worry. Since we're partners, I'll be here to help, and I'll make sure y
 
 f "You would? Ohh, thank you so much, %(m)s! That's so nice of you!"
 
+show black behind labroom
+show labroom at dim
 show text "You then go over and give him a hug in thanks. You don't notice, but you accidentally squeeze him just a little too hard, nearly cracking a couple bones, but it seems he enjoys it nonetheless. You almost think you saw his cheeks turn a little red..." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade
