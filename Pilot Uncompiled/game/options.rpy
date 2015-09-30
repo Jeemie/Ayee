@@ -100,7 +100,7 @@ init -1 python hide:
     ## are the size of the left/right and top/bottom borders,
     ## respectively.
 
-    style.window.background = Frame("frame.png", 25, 25)
+    style.window.background = Frame("images/frame.png", 25, 25)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
