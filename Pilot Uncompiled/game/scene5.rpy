@@ -19,7 +19,7 @@ hide text at basicfade
 "???" "Somebody must have had a rough night."
 with vpunch
 
-show text "You jump in your seat, startled at the sudden voice. Looking around, there are many more people in the room now, and sitting next to you is %(f)s."  at basicfade,truecenter with Pause(4.5)
+show text "You jump in your seat, startled at the sudden voice. Looking around, there are many more people in the room now, and sitting next to you is your partner."  at basicfade,truecenter with Pause(4.5)
 pause 1.0
 hide text at basicfade
 scene olin with dissolve

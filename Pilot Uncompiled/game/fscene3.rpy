@@ -5,7 +5,7 @@ scene black with dissolve
 
 show black at basicfade
 
-show text "It's now 5:05 and you're standing at the tree waiting for %(m)s to arrive. You expected he was going to be late based on how surprised he seemed when you passed him." at basicfade,truecenter with Pause(2.5)
+show text "It's now 5:05 and you're standing at the tree waiting for him to arrive. You expected he was going to be late based on how surprised he seemed when you passed him." at basicfade,truecenter with Pause(2.5)
 pause 1
 $ renpy.pause(2, hard='True')
 hide text at basicfade

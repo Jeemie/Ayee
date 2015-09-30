@@ -6,11 +6,14 @@ label start:
 
 
 
-show bg3 at mmenu4
+show bg3 at mmenu4, topleft
 
-show heart at mmenu5
+show heart at mmenu5, topleft
 
 menu:
+    
+    "Test credits":
+        jump credits
     
     "Play New Game +" if persistent.beat_game == True:
         jump menu2
