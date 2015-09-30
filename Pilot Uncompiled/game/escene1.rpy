@@ -28,10 +28,13 @@ pause 1
 hide text at basicfade
 
 
-scene bg quad with dissolve
+scene quad with dissolve
 show fhappy at basicfade,center
 f "Hey, %(m)s, where are you going? You're gonna be late! Don't forget that we're meeting at the tree in 5 minutes!"
 
+show black behind quad
+hide quad at fastfade
+show fhappy at dim
 show text "And that was the first time I saw her. I guess the movies also got the whole \"love at first sight\" thing too." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade
