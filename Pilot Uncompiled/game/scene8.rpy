@@ -42,7 +42,7 @@ show tree at dim
 show black behind tree
 
 show text "She storms off in a fit of rage. You're left to ponder exactly what just happened." at basicfade, truecenter
-pause 2.0
+$ renpy.pause (2.0, hard='True')
 hide text at basicfade
 
 "{i}Could it have really been something that I did? But everything had seemed to be going so well.{/i}"

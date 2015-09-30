@@ -45,11 +45,13 @@ hide text at basicfade
 show text "The rest of your lab time is spent performing various infusions of chemicals as you explain their properties to your partner. You feel a warm connection between the two of you, and you hope that you're not the only one who feels it."  at basicfade,truecenter with Pause(4.5)
 $ renpy.pause(1.0, hard='True')
 hide text at basicfade
+
+
 scene black with dissolve
 show text "Day Three \n Forming the Bond" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene black
+show goddard at basicfade
 show fhappy at basicfade,center
 f "So hey...There's this concert in Boston this week that I'd love to see, but most of my friends are going home over the weekend."
 
@@ -62,19 +64,23 @@ m "Hmm..."
 m "O-Oh! Y-Yeah! I'd love to – I mean, that sounds pretty awesome. Of course I'll go!"
 
 hide fhappy at fastfade
+show black behind goddard
+show goddard at dim
 show text "The two of you began spending more time together." at basicfade, truecenter
-pause 1
+pause 3.0
 hide text at basicfade
-pause 1.0
+pause 3.0
 show text "Over the next three weeks, the two of you continue your routine lab work and usually find time to eat dinner together during the week." at basicfade, truecenter
-pause 1
+pause 3.0
 hide text at basicfade
-pause 1.0
+pause 3.0
 show text "She even convinced you to join the fencing club, and you've made even more friends there. It seems like things are going right in life." at basicfade, truecenter
-pause 1
+pause 4.0
 hide text at basicfade
 pause 1.0
+show goddard at undim
 show fhappy at basicfade,center
+
 
 m "H-Hey, %(f)s, there's something I want to tell you..."
 
@@ -83,6 +89,7 @@ f "Hmm? What is it? Is it about the lab?"
 m "Umm...well..."
 
 hide fhappy at fastfade
+show goddard at dim
 show text"No matter what, you just couldn't tell her how you felt." at basicfade, truecenter
 pause 1
 hide text at basicfade
@@ -91,17 +98,17 @@ pause 1.0
 m "Yeah, it is actually about the lab..."
 
 show text "You begin to notice some things about her that you hadn't before; how caring she can be, how she always makes sure all her food is completely separated, how she always makes you laugh even just by laughing herself." at basicfade,truecenter with Pause(2.5)
-pause 1
+pause 3.0
 hide text at basicfade
 pause 1.0
 
 show text "There are some days however where you're not sure that she feels the same way about you. Sometimes she'll give you the cold shoulder and won't text you back." at basicfade,truecenter with Pause(2.5)
-pause 1
+pause 3.0
 hide text at basicfade
 pause 1.0
 
 show text "When you ask her if she's mad at you, she just sighs and replies that nothing's wrong. After that, things tend to go back to normal for a while until it happens again. You can never tell what's bothering her though, until one day..." at basicfade,truecenter with Pause(2.5)
-pause 1
+pause 5.0
 hide text at basicfade
 pause 1.0
 

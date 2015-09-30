@@ -13,11 +13,13 @@ f "{i}Wait, isn't that –{/i}"
 
 f "{i}But he shouldn't be here...{/i}"
 
-scene bg quad with dissolve
+show quad with dissolve
 "You see %(m)s walking into another building."
 
 f "{i}He {b}should{/b} be heading to chemistry.{/i}"
 
+show black behind quad
+show quad at dim
 show text "You have no time to stop, though, as you press onward to class." at basicfade,truecenter with Pause(2.5)
 pause 1
 hide text at basicfade

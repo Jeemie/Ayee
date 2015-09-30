@@ -3,7 +3,7 @@ scene black with dissolve
 show text "New Beginning" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene olin with dissolve
+show olin with dissolve
 
 stop music
 play music "music/start.mp3"
@@ -89,11 +89,11 @@ menu:
 hide msad at fastfade
 show mshocked at fastfade, center
 
-f "Hi there! If I'm correct, then you must be %(m)s. My name's %(f)s and we're gonna be partners!"
+f "Hi there! My name's %(f)s and we're gonna be partners!"
 
 male "O-Oh! H-Hey there! Sorry, I wasn't paying too much attention before. My name is.."
 
-scene olin at dim
+show olin at dim
 show black behind olin
 $ persistent.m = renpy.input("Type his name here")
 $ persistent.m = persistent.m.strip()
@@ -103,11 +103,13 @@ if persistent.m == "":
     $ m = persistent.m
     "My name is %(m)s!"
 $ m = persistent.m
-show olin with dissolve
+
+show olin at undim
 pause 1.0
+hide black
 
 hide mshocked at fastfade
-show mhappy at basicfade
+show mhappy at basicfade, center
 
 f "Well, I hope you don't do that when we're working, too – 'cause I know nothing about chemistry, so it'd be bad if neither of us did the work."
 

@@ -75,7 +75,7 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        #mm_root =
+        mm_root = "mainmenu",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
@@ -100,28 +100,28 @@ init -1 python hide:
     ## are the size of the left/right and top/bottom borders,
     ## respectively.
 
-    # style.window.background = Frame("frame.png", 12, 12)
+    style.window.background = Frame("frame.png", 25, 25)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
 
-    # style.window.left_margin = 6
-    # style.window.right_margin = 6
-    # style.window.top_margin = 6
-    # style.window.bottom_margin = 6
+    style.window.left_margin = 10
+    style.window.right_margin = 10
+    style.window.top_margin = 10
+    style.window.bottom_margin = 0
 
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 20
+    style.window.right_padding = 20
+    style.window.top_padding = 20
+    style.window.bottom_padding = 20
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    #style.window.yminimum = 1080
+    style.window.yminimum = 250
 
 
     #########################################
@@ -149,11 +149,11 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "DejaVuSans.ttf"
 
     ## The default size of text.
 
-    # style.default.size = 22
+    style.default.size = 28
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.
@@ -283,7 +283,7 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 10
+    config.default_text_cps = 20
 
     ## The default auto-forward time setting.
 

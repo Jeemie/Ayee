@@ -36,6 +36,6 @@ hide text at basicfade
 
 
 "That{nw}"
-"{cps=1}That{fast}...explains a bit{/cps}"
+"{cps=5}That{fast}...explains a bit{/cps}"
 
 jump escene4
