@@ -12,8 +12,8 @@ show heart at mmenu5, topleft
 
 menu:
     
-    "Test credits":
-        jump credits
+    "Jump End Male":
+        jump scene8
     
     "Play New Game +" if persistent.beat_game == True:
         jump menu2
