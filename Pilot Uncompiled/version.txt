@@ -1,3 +1,6 @@
+V1.6a
+"Jump Male End" temporary menu option removed.
+
 V1.6
 Male Story polished up more.
 Fixed some images.
