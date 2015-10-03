@@ -149,11 +149,11 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    style.default.font = "DejaVuSans.ttf"
+    style.default.font = "GARA.ttf"
 
     ## The default size of text.
 
-    style.default.size = 28
+    style.default.size = 36
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.

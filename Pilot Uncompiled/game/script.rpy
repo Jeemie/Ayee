@@ -42,5 +42,3 @@ menu:
         
     "Play Epilogue" if persistent.epilogue == True:
         jump escene1
-        
-#to do later: same name option, change vpunch to custom transition, no chem pun intended

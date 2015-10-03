@@ -1,3 +1,7 @@
+V1.6b
+Garamond font added and set as default
+major text speed bug fixes coming soon
+
 V1.6a
 "Jump Male End" temporary menu option removed.
 
