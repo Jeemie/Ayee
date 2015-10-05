@@ -6,17 +6,17 @@ scene black with dissolve
 show olin with dissolve
 show black behind olin
 show olin at dim
-show text "You break into your classroom with a minute to spare and find that everyone else has made it before you." at basicfade,truecenter with Pause(2.5)
+show text "You dash into your classroom with a minute to spare and find that everyone else has made it before you." at basicfade,truecenter with Pause(6.0)
 pause 1
 hide text at basicfade
 pause 1.0
 
-show text "Not wanting to draw any attention to yourself, you decide to take a seat quickly. You catch the head of a certain brown-haired guy near the front row and move down to take a seat next to him." at basicfade,truecenter with Pause(2.5)
+show text "Not wanting to draw any attention to yourself, you decide to take a seat quickly. You catch the head of a certain brown-haired guy near the front row and move down to take a seat next to him." at basicfade,truecenter with Pause(11.4)
 pause 1
 hide text at basicfade
 pause 1.0
 
-show text "As you approach, you see that his head is nearly face down on the desk. It seems like he got even less sleep than you." at basicfade,truecenter with Pause(2.5)
+show text "As you approach, you see that his head is nearly face down on the desk. It seems like he got even less sleep than you." at basicfade,truecenter with Pause(7.5)
 pause 1
 hide text at basicfade
 pause 1.0
@@ -38,12 +38,12 @@ m "Yeah, you seem perfectly fine in the heat. Was it very hot where you came fro
 f "I lived in North Carolina most of my life, so it was pretty hot for most of the year. My grandparents live in Massachusetts though, so I've been up here many times, especially in the winter, when it's full of snow."
 
 show olin at dim
-show text "As he's about to respond, the professor walks into the room and calls for everybody's attention. The class goes by quickly. You're surprised %(m)s hasn't fallen asleep at all." at basicfade,truecenter with Pause(2.5)
+show text "As he's about to respond, the professor walks into the room and calls for everybody's attention. The class goes by quickly. You're surprised [m] hasn't fallen asleep at all." at basicfade,truecenter with Pause(8.7)
 pause 1
 hide text at basicfade
 pause 1.0
 
-show text "After class, you both say goodbye and remind each other about your lab the next day. The rest of your classes seem to go by a bit faster afterward for some reason." at basicfade,truecenter with Pause(2.5)
+show text "After class, you both say goodbye and remind each other about your lab the next day. The rest of your classes seem to go by a bit faster for some reason." at basicfade,truecenter with Pause(9.3)
 pause 1
 hide text at basicfade
 pause 1.0

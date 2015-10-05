@@ -7,7 +7,7 @@ scene black with dissolve
 
 scene tree with dissolve
 show fangry at fastfade, center
-m "What are you thinking??"
+m "What are you thinking?!"
 
 f "What am I thinking? I'm thinking you're a jerk!"
 
@@ -17,18 +17,18 @@ f "You have no idea? You're the problem! I can't handle your constant mood swing
 
 m "What are you talking about?"
 
-f "It's as if each time I see you you're a different person! And you act so clueless, like you're trying to make me feel dumb!"
+f "It's as if each time I see you, you're a different person! And you act so clueless, as if you're trying to make me feel dumb!"
 
 m "{i}Well, that's because I am clueless...{/i}"
 
 menu:
-    "I think you act strangely each time I see you, too.":
+    "{size=40}{b}I think you act strangely every time I see you, too.{/b}":
         hide fangry at fastfade
         show fsad at fastfade,center
-    "I really don't understand. Are you sure you're alright?":
+    "{size=40}{b}I really don't understand. Are you sure you're alright?{/b}":
         hide fangry at fastfade
         show fsad at fastfade,center
-    "Maybe you're mistaking someone else for me?":
+    "{size=40}{b}Maybe you're mistaking someone else for me?{/b}":
         hide fangry at fastfade
         show fsad at fastfade,center
 
@@ -41,13 +41,13 @@ hide fangry at fastfade
 show tree at dim
 show black behind tree
 
-show text "She storms off in a fit of rage. You're left to ponder exactly what just happened." at basicfade, truecenter
+show text "She storms off in a fit of rage. You're left to ponder exactly what just happened." at basicfade,truecenter with Pause(4.8)
 $ renpy.pause (2.0, hard='True')
 hide text at basicfade
 
-"{i}Could it have really been something that I did? But everything had seemed to be going so well.{/i}"
-"{i}And I was even going to ask her out if we got a good grade on our assignment!{/i}"
-"{i}Have I really been acting differently though?{/i}"
+m "{i}Could it have really been something that I did? But everything had seemed to be going so well.{/i}"
+m "{i}And I was even going to ask her out if we got a good grade on our assignment!{/i}"
+m "{i}Have I really been acting differently, though?{/i}"
 "GAHHH! I don't understand women at all!"
 
 if persistent.beat_female == True:

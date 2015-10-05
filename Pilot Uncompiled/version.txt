@@ -1,9 +1,17 @@
+V1.7
++Final round of proofreading
++Narration speed changes according to a mathematical formula based on average reading speeds
++New font for menus
++Updated credits to reflect new group roles
++Fixed credit delay bug
++Fixed bug in which %(m)s and %(f)s appeared instead of character names
+
 V1.6b
-Garamond font added and set as default
-major text speed bug fixes coming soon
++Garamond font added and set as default
++major text speed bug fixes coming soon
 
 V1.6a
-"Jump Male End" temporary menu option removed.
++"Jump Male End" temporary menu option removed.
 
 V1.6
 Male Story polished up more.

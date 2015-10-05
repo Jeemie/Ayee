@@ -7,11 +7,11 @@ scene dininghall with dissolve
 show mhappy at basicfade, center
 f "No way! You were a championship fencer?"
 
-m "Well, it's not that I was that good or anything...but my sophomore year of high school, I made it to the semi-finals of this national tournament. At the time I was ranked 4th in the US for my age."
+m "Well, it's not that I was that good or anything, but in my sophomore year of high school, I made it to the semifinals of this national tournament. At the time I was ranked 4th in the US for my age."
 
 f "{i}I wouldn't have taken him to be a fencer! He looks more like a tennis guy if you ask me.{/i}"
 
-f "That's so incredible! You must have been awesome at it. So does that mean you're gonna join the fencing team here?"
+f "That's so incredible! You must have been awesome at it. So does that mean you're going to join the fencing team here?"
 
 hide mhappy at fastfade
 show msad at basicfade, center
@@ -57,7 +57,7 @@ m "A-Ah, n-no! I didn't mean it like that! I think w-whatever you'd make would b
 
 f "Hahahaha! I'm just kidding, %(m)s. I knew what you meant! It is fun to tease you though. You turned pretty red there too!"
 
-f "{i}It's fun talking with %(m)s. I don't want to seem too mean though. I'm not sure he could handle it.{/i}"
+f "{i}It's fun talking with %(m)s. I don't want to seem too mean, though. I'm not sure he could handle it.{/i}"
 
 hide mshocked at fastfade
 show mhappy at basicfade,center
@@ -65,7 +65,7 @@ show mhappy at basicfade,center
 show dininghall at fastfade
 show black behind dininghall
 show dininghall at dim
-show text "A bit later, you both check the time and find that you've been in the dining hall talking for 2 hours. You both get up in a hurry and exchange phone numbers before heading out. You fall asleep tonight thinking of how different people are in college than in high school – and it's a good different." at basicfade,truecenter with Pause(2.5)
+show text "A bit later, you check the time and find that you've been in the dining hall talking for two hours. You both get up in a hurry and exchange phone numbers before heading out. You fall asleep tonight thinking of how different people are in college than in high school – and it's a good kind of different." at basicfade,truecenter with Pause(17.4)
 pause 1
 hide text at basicfade
 pause 1.0

@@ -6,7 +6,7 @@ scene black with dissolve
 
 scene labroom with dissolve
 show mhappy at fastfade, center
-show text "It's Tuesday once again after three weeks of college. You and %(m)s are back in the chemistry lab. Neither of you is doing much work, though." at basicfade,truecenter with Pause(2.5)
+show text "After three weeks of college, it's Tuesday once again. You and [m] are back in the chemistry lab. Neither of you is doing much work, though." at basicfade,truecenter with Pause(7.8)
 pause 1
 hide text at basicfade
 pause 1.0
@@ -19,14 +19,14 @@ f "Fine, I'll mix them."
 
 hide mhappy at fastfade
 show mangry at fastfade,center
-m "Hey! What are you doing?? Be careful with those, we could get in a lot of trouble for mixing things randomly. You have to think before you do something like that, OK?"
+m "Hey! What are you doing?! Be careful with those! We could get in a lot of trouble for mixing things randomly. You have to think before you do something like that, okay?"
 
-f "Oh really? I have to think first? Well maybe you're the one who needs to think before he does things! Or do you just not care about anybody else at all?"
+f "Oh really? I have to think first? Well, maybe you're the one who needs to think before he does things! Or do you just not care about anybody else at all?"
 
 "You suddenly pack up all your things and leave the classroom before he can even say anything."
 
 m "H-Hey, wait!"
 
-"You're already out the door and on your way to the quad before he can get up to chase after you."
+"You're already out the door and on your way to the Quad before he can get up to chase after you."
 
 jump fscene10

@@ -10,21 +10,21 @@ show fangry at fastfade, center
 f "Ahh! I can't understand this at all! Why do we need to figure out how they're going to react? Why don't we just combine them all and see what happens? Isn't that what experimentation is?"
 
 menu:
-    "Go for it!":
+    "{size=40}{b}Go for it!{/b}":
         "She pours every chemical within reach into a single beaker, an excited smile on her face. You can't help but admire her adventurous attitude and look on in wonder as her experiment bubbles."
         show fhappy at basicfade,center
         f "Look! It's doing something! I told you, experiments should –"
         hide labroom at fastfade
         show black at fastfade
         $ renpy.movie_cutscene("video/boom.mpg")
-        show text "There isn't any time to react as the solution bubbles to a climax and explodes in her face. You can't feel anything as you're caught in the blast." at basicfade,truecenter
+        show text "There isn't any time to react as the solution bubbles to a climax and explodes in her face. You can't feel anything as you're caught in the blast." at basicfade,truecenter with Pause(8.4)
         $ renpy.pause(5.0, hard='True')
         hide text basicfade
         scene black with dissolve
         show text "Game Over" at basicfade with Pause(2.5)
         scene black with dissolve
         return
-    "Maybe we should try something else...":
+    "{size=40}{b}Maybe we should try something else...{/b}":
         m "I guess so, but I'm sure they don't want us to cause an explosion. Besides, it's not so hard. We just have to look up the chemical compounds they'll form."
 
 f "I'm just not good at chemistry. I took it in high school, so I thought it would be easy now, but I still don't get it! I'm doomed!"
@@ -34,15 +34,15 @@ m "Don't worry. Since we're partners, I'll be here to help, and I'll make sure y
 hide fangry at fastfade
 show fhappy at fastfade,center
 
-f "You would? Ohh, thank you so much, %(m)s! That's so nice of you!"
+f "You would? Oh, thank you so much, %(m)s! That's so nice of you!"
 
 hide fhappy at fastfade
 show labroom at dim
 show black behind labroom
-show text "You then notice that her arms are around you, and you're pulled into a hug. She nearly squeezes some of the life out of you, but you enjoy it nonetheless. Your cheeks momentarily turn red in the process, but you don't think she noticed."  at basicfade,truecenter with Pause(5.5)
+show text "You then notice that her arms are around you, and you're pulled into a hug. She nearly squeezes some of the life out of you, but you enjoy it nonetheless. Your cheeks momentarily turn red in the process, but you don't think she noticed."  at basicfade,truecenter with Pause(13.2)
 $ renpy.pause(1.0, hard='True')
 hide text at basicfade
-show text "The rest of your lab time is spent performing various infusions of chemicals as you explain their properties to your partner. You feel a warm connection between the two of you, and you hope that you're not the only one who feels it."  at basicfade,truecenter with Pause(4.5)
+show text "The rest of your lab time is spent performing various infusions of chemicals as you explain their properties to your partner. You feel a warm connection between the two of you, and you hope that you're not the only one who feels it."  at basicfade,truecenter with Pause(12.9)
 $ renpy.pause(1.0, hard='True')
 hide text at basicfade
 
@@ -66,15 +66,15 @@ m "O-Oh! Y-Yeah! I'd love to – I mean, that sounds pretty awesome. Of course I
 hide fhappy at fastfade
 show black behind goddard
 show goddard at dim
-show text "The two of you began spending more time together." at basicfade, truecenter
+show text "The two of you begin spending more time together." at basicfade,truecenter with Pause(2.7)
 pause 3.0
 hide text at basicfade
 pause 3.0
-show text "Over the next three weeks, the two of you continue your routine lab work and usually find time to eat dinner together during the week." at basicfade, truecenter
+show text "Over the next three weeks, the two of you continue your routine lab work and usually find time to eat dinner together during the week." at basicfade,truecenter with Pause(7.5)
 pause 3.0
 hide text at basicfade
 pause 3.0
-show text "She even convinced you to join the fencing club, and you've made even more friends there. It seems like things are going right in life." at basicfade, truecenter
+show text "She even convinces you to join the fencing club, where you've made even more friends. It seems like life is going just right." at basicfade,truecenter with Pause(6.9)
 pause 4.0
 hide text at basicfade
 pause 1.0
@@ -90,24 +90,24 @@ m "Umm...well..."
 
 hide fhappy at fastfade
 show goddard at dim
-show text"No matter what, you just couldn't tell her how you felt." at basicfade, truecenter
+show text "No matter what, you just couldn't tell her how you felt." at basicfade,truecenter with Pause(3.3)
 pause 1
 hide text at basicfade
 pause 1.0
 
 m "Yeah, it is actually about the lab..."
 
-show text "You begin to notice some things about her that you hadn't before; how caring she can be, how she always makes sure all her food is completely separated, how she always makes you laugh even just by laughing herself." at basicfade,truecenter with Pause(2.5)
+show text "You begin to notice some things about her that you hadn't before; how caring she can be, how she always makes sure all her food is completely separated, how she always makes you laugh even just by laughing herself." at basicfade,truecenter with Pause(11.7)
 pause 3.0
 hide text at basicfade
 pause 1.0
 
-show text "There are some days however where you're not sure that she feels the same way about you. Sometimes she'll give you the cold shoulder and won't text you back." at basicfade,truecenter with Pause(2.5)
+show text "There are some days however where you're not sure that she feels the same way about you. Sometimes she'll give you the cold shoulder and won't text you back." at basicfade,truecenter with Pause(8.7)
 pause 3.0
 hide text at basicfade
 pause 1.0
 
-show text "When you ask her if she's mad at you, she just sighs and replies that nothing's wrong. After that, things tend to go back to normal for a while until it happens again. You can never tell what's bothering her though, until one day..." at basicfade,truecenter with Pause(2.5)
+show text "When you ask her if she's mad at you, she just sighs and replies that nothing's wrong. After that, things tend to go back to normal for a while, until it happens again. You can never tell what's bothering her, though, until one day..." at basicfade,truecenter with Pause(13.2)
 pause 5.0
 hide text at basicfade
 pause 1.0

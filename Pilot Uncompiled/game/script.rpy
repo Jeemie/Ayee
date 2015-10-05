@@ -12,15 +12,15 @@ show heart at mmenu5, topleft
 
 menu:
     
-    "Play New Game +" if persistent.beat_game == True:
+    "{size=40}{b}Play New Game +{/b}" if persistent.beat_game == True:
         jump menu2
     
     
-    "Play Male Side":
+    "{size=40}{b}Play Male Side{/b}":
         jump scene1
     
     
-    "Play Female Side":
+    "{size=40}{b}Play Female Side{/b}":
         jump fscene1
         
 label menu2:
@@ -32,13 +32,13 @@ show heart at mmenu5
 
 menu:
     
-    "Play Male Side":
+    "{size=40}{b}Play Male Side{/b}":
         jump scene1cont
 
     
-    "Play Female Side":
+    "{size=40}{b}Play Female Side{/b}":
         jump fscene1cont
 
         
-    "Play Epilogue" if persistent.epilogue == True:
+    "{size=40}{b}Play Epilogue{/b}" if persistent.epilogue == True:
         jump escene1

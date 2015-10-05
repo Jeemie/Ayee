@@ -193,12 +193,12 @@ screen main_menu():
 
         has vbox
 
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Credits") action Start(label='credits')
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit(confirm=False)
+        textbutton _("{size=40}{b}Start Game{/b}") action Start()
+        textbutton _("{size=40}{b}Load Game{/b}") action ShowMenu("load")
+        textbutton _("{size=40}{b}Options{/b}") action ShowMenu("preferences")
+        textbutton _("{size=40}{b}Credits{/b}") action Start(label='credits')
+        textbutton _("{size=40}{b}Help{/b}") action Help()
+        textbutton _("{size=40}{b}Quit{/b}") action Quit(confirm=False)
 
 init -2:
 
@@ -228,13 +228,13 @@ screen navigation():
 
         has vbox
 
-        textbutton _("Return") action Return()
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Save Game") action ShowMenu("save")
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Main Menu") action MainMenu()
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit()
+        textbutton _("{size=40}{b}Return{/b}") action Return()
+        textbutton _("{size=40}{b}Options{/b}") action ShowMenu("preferences")
+        textbutton _("{size=40}{b}Save Game{/b}") action ShowMenu("save")
+        textbutton _("{size=40}{b}Load Game{/b}") action ShowMenu("load")
+        textbutton _("{size=40}{b}Main Menu{/b}") action MainMenu()
+        textbutton _("{size=40}{b}Help{/b}") action Help()
+        textbutton _("{size=40}{b}Quit{/b}") action Quit()
 
 init -2:
 
