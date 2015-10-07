@@ -5,12 +5,11 @@ scene black with dissolve
 
 
 show labroom at fastfade
-show mhappy at fastfade, center
 show text "After three weeks of college, it's Tuesday once again. You and [m] are back in the chemistry lab. Neither of you is doing much work, though." at basicfade,truecenter with Pause(7.8)
 pause 1
 hide text at basicfade
 pause 1.0
-
+show mhappy at fastfade, center
 m "Hey, we should probably start to mix the chemicals if we want to finish."
 
 f "Fine, I'll mix them."

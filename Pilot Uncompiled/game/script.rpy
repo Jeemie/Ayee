@@ -12,6 +12,8 @@ show heart at mmenu5, topleft
 
 menu:
     
+
+    
     "{size=40}{b}Play New Game +{/b}" if persistent.beat_game == True:
         jump menu2
     

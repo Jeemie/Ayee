@@ -129,6 +129,7 @@ m "O-okay, that works for me! I'll see you then."
 
 f "Yeah, bye for now!"
 
+jump fscene8
 show olin at fastfade
 show black behind olin
 show olin at dim

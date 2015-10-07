@@ -187,12 +187,13 @@ screen main_menu():
         add "mainmenu2"
     # The main menu buttons.
     frame:
-        style_group "mm"
+        #style_group "mm"
+        
         xalign 0.98
         yalign 0.98
 
         has vbox
-
+        
         textbutton _("{size=40}{b}Start Game{/b}") action Start()
         textbutton _("{size=40}{b}Load Game{/b}") action ShowMenu("load")
         textbutton _("{size=40}{b}Options{/b}") action ShowMenu("preferences")
