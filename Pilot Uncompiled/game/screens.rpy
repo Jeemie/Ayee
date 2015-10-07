@@ -185,13 +185,14 @@ screen main_menu():
         add "images/tree.jpg"
         add "mainmenu"
         add "mainmenu2"
+        
     # The main menu buttons.
     frame:
-        #style_group "mm"
+        style_group "mm"
         
         xalign 0.98
         yalign 0.98
-
+        
         has vbox
         
         textbutton _("{size=40}{b}Start Game{/b}") action Start()
@@ -206,8 +207,8 @@ init -2:
     # Make all the main menu buttons be the same size.
     style mm_button:
         size_group "mm"
-
-
+        background "#775274"
+        hover_background "#000"
 
 ##############################################################################
 # Navigation
@@ -224,6 +225,7 @@ screen navigation():
     # The various buttons.
     frame:
         style_group "gm_nav"
+        
         xalign .98
         yalign .98
 
@@ -237,11 +239,13 @@ screen navigation():
         textbutton _("{size=40}{b}Help{/b}") action Help()
         textbutton _("{size=40}{b}Quit{/b}") action Quit()
 
-init -2:
+init -1:
 
     # Make all game menu navigation buttons the same size.
     style gm_nav_button:
         size_group "gm_nav"
+        background "#775274"
+        hover_background "#000"
 
 
 ##############################################################################
@@ -460,14 +464,15 @@ init -2:
         xfill True
         xmargin 5
         top_margin 5
-
+        background "#775274"
+        hover_background "#000"
     style pref_vbox:
         xfill True
-
+        
     style pref_button:
         size_group "pref"
         xalign 1.0
-
+        
     style pref_slider:
         xmaximum 192
         xalign 1.0
@@ -519,7 +524,8 @@ screen yesno_prompt(message, yes_action, no_action):
 init -2:
     style yesno_button:
         size_group "yesno"
-
+        background "#775274"
+        hover_background "#000"
     style yesno_label_text:
         text_align 0.5
         layout "subtitle"
@@ -539,13 +545,11 @@ screen quick_menu():
         xalign 1.0
         yalign 1.0
 
-        textbutton _("Back") action Rollback()
+
         textbutton _("Save") action ShowMenu('save')
         textbutton _("Q.Save") action QuickSave()
         textbutton _("Q.Load") action QuickLoad()
         textbutton _("Skip") action Skip()
-        textbutton _("F.Skip") action Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
         textbutton _("Prefs") action ShowMenu('preferences')
 
 init -2:
@@ -556,7 +560,7 @@ init -2:
 
     style quick_button_text:
         is default
-        size 12
+        size 40
         idle_color "#8888"
         hover_color "#ccc"
         selected_idle_color "#cc08"

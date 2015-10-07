@@ -25,6 +25,8 @@ m "{i}I'm determined to change that, though! Starting now, I'll make a ton of fr
 p "Hello? I was asking you for your first name."
 
 show text "The teacher is staring at you with a piece of paper in her hand. It seems to be a checklist of the names of the students in the chemistry class." at basicfade,truecenter with Pause(9.0)
+pause 2.0
+hide text at fastfade 
 
 m "{i}O-Oh crap! I must have spaced out.{/i}"
 
