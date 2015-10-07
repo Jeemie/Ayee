@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Dinner Date" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene dininghall with dissolve
+show dininghall with dissolve
 show mhappy at basicfade, center
 f "No way! You were a championship fencer?"
 

@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Day One \n Chemistry Class" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene olin with dissolve
+show olin with dissolve
 
 $ f = persistent.f
 $ m = persistent.m
@@ -51,7 +51,7 @@ show olin at undim
 pause 1.0
 hide black
 
-
+hide text at fastfade
 p "Alright then. %(m)s it is."
 
 
@@ -135,6 +135,7 @@ if persistent.f == "":
     $ persistent.f = "Natalie"
     $ f = persistent.f
 $ f = persistent.f
+pause 1.0
 show olin at undim
 pause 1.0
 hide black

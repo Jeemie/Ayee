@@ -3,7 +3,7 @@ scene black with dissolve
 show text "New Beginning" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene olin with dissolve
+show olin at fastfade
 
 stop music
 play music "music/start.mp3"

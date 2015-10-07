@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Chem Time!" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene labroom
+show labroom at fastfade
 show mhappy at basicfade,center
 f "Ahh! I can't understand this at all! Why do we need to figure out how they're going to react? Why don't we just combine them all and see what happens? Isn't that what experimentation is?"
 

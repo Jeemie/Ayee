@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Bigger Kaboom" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene tree with dissolve
+show tree at fastfade
 show mangry at fastfade, center
 m "What are you thinking?!"
 

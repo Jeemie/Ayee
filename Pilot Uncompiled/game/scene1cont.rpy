@@ -6,7 +6,7 @@ scene black with dissolve
 $ f = persistent.f
 $ m = persistent.m
 
-scene olin with dissolve
+show olin with dissolve
 
 m "{i}It's the first day of class. I remember facing this day so many times in high school.{/i}"
 

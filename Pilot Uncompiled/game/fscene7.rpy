@@ -3,7 +3,7 @@ scene black with dissolve
 show text "The Rejection" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene quad with dissolve
+show quad at fastfade
 "It's later in the day now, and you're heading back to your dorm after having dinner with some of the friends from your dorm. So far, it seems like a bright, happy day for some reason, even though your Tuesday is filled with a ton of classes."
 
 "You notice someone sitting on a bench, alone, next to the path you're walking on. As you get closer, you recognize %(m)s sitting and looking serious."

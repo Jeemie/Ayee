@@ -4,7 +4,7 @@ scene black with dissolve
 show text "Day Two \n Dorm Room Troubles" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene dorm with dissolve
+show dorm with dissolve
 
 show dorm at dim
 show black behind dorm

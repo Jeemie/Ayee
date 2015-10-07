@@ -5,7 +5,7 @@ scene black with dissolve
 show text "Day Two \n The Big Meeting" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene tree
+show tree at fastfade
 show black behind tree
 m "{i}There she is! Wow, I don’t think I got a very good look at her yesterday, but she looks...{/i}"
 stop music

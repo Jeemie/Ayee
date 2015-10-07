@@ -3,7 +3,7 @@ scene black with dissolve
 show text "Thick Like Cool Whip" at basicfade with Pause(2.5)
 scene black with dissolve
 
-scene tree with dissolve
+show tree with fastfade
 show fsad at basicfade,center
 n "Hey, %(f)s, what's up?"
 
