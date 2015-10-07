@@ -3,7 +3,7 @@ scene black with dissolve
 show text "New Beginning" at basicfade with Pause(2.5)
 scene black with dissolve
 
-show olin with dissolve
+show olin at fastfade
 
 stop music
 play music "music/start.mp3"
@@ -129,9 +129,9 @@ m "O-okay, that works for me! I'll see you then."
 
 f "Yeah, bye for now!"
 
-show olin fastfade
+show olin at fastfade
 show black behind olin
-show olin dim
+show olin at dim
 
 show text "He seemed a bit strange, as if he were really nervous, but you have no idea why. You guess it must be because it's the first day of classes." at basicfade,truecenter with Pause(8.7)
 pause 1

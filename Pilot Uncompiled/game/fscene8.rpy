@@ -33,16 +33,18 @@ m "Don't worry. Since we're partners, I'll be here to help, and I'll make sure y
 
 f "You would? Oh, thank you so much, %(m)s! That's so nice of you!"
 
+
 show black behind labroom
+hide mhappy at fastfade
 show labroom at dim
 show text "You then go over and give him a hug in thanks. You don't notice, but you accidentally squeeze him just a little too hard, nearly cracking a couple bones, but it seems he enjoys it nonetheless. You almost think you saw his cheeks turn a little red..." at basicfade,truecenter with Pause(14.1)
 pause 1
 hide text at basicfade
-pause 1.0
+$ renpy.pause(2.0, hard='True')
 
 show text "The rest of your lab time is spent performing various infusions of chemicals as [m] explains their properties to you. You feel a warm connection between the two of you, and you think it might not just be you." at basicfade,truecenter with Pause(11.7)
 pause 1
 hide text at basicfade
-pause 1.0
+$ renpy.pause(2.0, hard='True')
 
 jump fscene9
