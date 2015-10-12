@@ -45,11 +45,11 @@ image dorm = "images/dorm.jpg"
 image dininghall = "images/daka.jpg"
 image quad = "images/quad.jpg"
 
-image fsassy = "images/female_sassy.png"
+image fsassy = "images/female_happy.png"
 image fhappy = "images/female_happy.png"
 image fangry = "images/female_angry.png"
 image fsad = "images/female_sad.png"
-image flaughing = "images/female_laughing.png"
+image flaughing = "images/female_happy.png"
 
 image mhappy = "images/male_happy.png"
 image msad = "images/male_sad.png"

@@ -48,23 +48,21 @@ play sound "sfx/idea.wav"
 "...{fast}!!"
 "{size=+15}{cps=30}It's almost like a date!{/cps}{/size}"
 show tree at undim
-hide fhappy at fastfade
-show fsassy at fastfade,center
 f "I guess that’s everything we really need to cover."
 f "I guess we could have just e-mailed each other, but this was good anyway."
 m "Do you want to go get something to eat right now?"
 show tree at dim
-hide fsassy at fastfade,center
+hide fhappy at fastfade,center
 show text "What did you just say?"  at basicfade,truecenter with Pause(1.5)
 pause 1
 hide text at basicfade
 m "{i}What did I just say?{/i}"
 show tree at undim
-show fsassy at fastfade,center
+show fhappy at fastfade,center
 
 
 f "Well, I have to get back to my homework later, but sure! I haven't eaten yet."
-hide fsassy at basicfade with moveoutright
+hide fhappy at basicfade with moveoutright
 show tree at dim
 show text "You let out the breath you hadn’t even known you were holding and smiled." at basicfade,truecenter with Pause(4.2)
 pause 1

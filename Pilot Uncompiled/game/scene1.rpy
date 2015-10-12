@@ -128,7 +128,7 @@ m "O-oh, yeah, I d-did! Uhh, yeah, my name's %(m)s, and you're...uhhh...you're..
 hide fhappy at basicfade
 show olin at dim
 show black behind olin
-show fsassy at basicfade, left with moveinleft
+show fhappy at basicfade, left with moveinleft
 $ persistent.f = renpy.input("Choose a name for the girl:")
 $ persistent.f = persistent.f.strip()
 if persistent.f == "":
@@ -145,7 +145,7 @@ f "Yeah, that's it! I was just making sure you were paying attention. It's nice 
 
 menu:
     "{size=40}{b}As long as you don't slow me down.{/b}":
-        hide fsassy at fastfade
+        hide fhappy at fastfade
         show fangry at fastfade, center
         f "Well fine, if you don't want to work with me, I'll go get a different partner."
         "She immediately goes over to the professor, and although you can't hear everything, it doesn't sound good for you." 
@@ -155,11 +155,9 @@ menu:
         scene black with dissolve
         return
     "{size=40}{b}It is a pleasure to work with you, m'lady.{/b}":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
         f "We should get going before the next class comes in!"
     "{size=40}{b}W-wait, I actually have to work with a girl?!{/b}":
-        hide fsassy at fastfade
+        hide fhappy at fastfade
         show fangry at fastfade, center
         f "Well fine, if you don't want to work with me, I'll go get a different partner."
         "She immediately goes over to the professor, and although you can't hear everything, it doesn't sound good for you." 
@@ -169,8 +167,6 @@ menu:
         scene black with dissolve
         return
     "{size=40}{b}I-It's nice to meet you!{/b}":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
         f "We should get going before the next class comes in."
 
 hide fhappy at fastfade

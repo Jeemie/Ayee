@@ -1,3 +1,7 @@
+V1.7a
++Fixed bug: game no longer crashes due to wrong asset names
++Blurred background images
+
 V1.7
 +Final round of proofreading
 +Narration speed changes according to a mathematical formula based on average reading speeds

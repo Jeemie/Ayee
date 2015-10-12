@@ -59,14 +59,12 @@ m "A-Ah, n-no! I didn't mean it like that! I think w-whatever you'd make would b
 
 m "{i}Your face is nearly red now as you try to reconcile her, but you completely stop when you see her wide grin.{/i}"
 
-hide fhappy at fastfade
-show flaughing at fastfade,center
 f "Hahahaha! I'm just kidding, %(m)s. I knew what you meant! It {b}is{/b} fun to tease you, though. You turned pretty red there, too!"
 
 m "{i}I got played! But I don't really mind. It feels nice talking to her like this.{/i}"
 
 show dininghall at dim
-hide flaughing at fastfade,center
+hide fhappy at fastfade,center
 show text "A bit later, you check the time and find that you've been in the dining hall talking for two hours. You both get up in a hurry and exchange phone numbers before heading out. This is the first night at college that you've fallen asleep feeling truly content."  at basicfade,truecenter with Pause(14.7)
 $ renpy.pause(3.0, hard='True')
 hide text at basicfade

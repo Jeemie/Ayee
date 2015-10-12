@@ -133,8 +133,6 @@ menu:
         scene black with dissolve
         return
     "{size=40}{b}I-it's nice to meet you!{/b}":
-        hide fsassy at basicfade
-        show fhappy at basicfade, left
         f "We should get going before the next class comes in."
 
 hide fhappy at fastfade
