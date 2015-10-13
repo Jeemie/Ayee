@@ -94,12 +94,13 @@ init -2:
     style menu_window is default
 
     style menu_choice is button_text:
-        clear
+        color "#fff"
 
     style menu_choice_button is button:
         xminimum int(config.screen_width * 0.75)
         xmaximum int(config.screen_width * 0.75)
-
+        background "#ff69b4"
+        hover_background "#543FF0"
 
 ##############################################################################
 # Input
@@ -464,7 +465,7 @@ init -2:
         xfill True
         xmargin 5
         top_margin 5
-        background "#775274"
+        background "#000000"
         hover_background "#000"
     style pref_vbox:
         xfill True
@@ -472,11 +473,13 @@ init -2:
     style pref_button:
         size_group "pref"
         xalign 1.0
-        
+        background "#543FF0"
+        hover_background "#000"
     style pref_slider:
         xmaximum 192
         xalign 1.0
-
+        left_bar "#ff69b4"
+        right_bar "#543FF0"
     style soundtest_button:
         xalign 1.0
 
@@ -487,48 +490,37 @@ init -2:
 # Screen that asks the user a yes or no question.
 # http://www.renpy.org/doc/html/screen_special.html#yesno-prompt
 
-screen yesno_prompt(message, yes_action, no_action):
+screen yesno_prompt:
 
     modal True
 
-    window:
-        style "gm_root"
-
-    frame:
-        style_group "yesno"
-
-        xfill True
-        xmargin .05
-        ypos .1
-        yanchor 0
-        ypadding .05
-
-        has vbox:
-            xalign .5
-            yalign .5
-            spacing 30
-
-        label _(message):
-            xalign 0.5
-
-        hbox:
-            xalign 0.5
-            spacing 100
-
-            textbutton _("Yes") action yes_action
-            textbutton _("No") action no_action
-
-    # Right-click and escape answer "no".
-    key "game_menu" action no_action
-
-init -2:
-    style yesno_button:
-        size_group "yesno"
-        background "#775274"
-        hover_background "#000"
-    style yesno_label_text:
-        text_align 0.5
-        layout "subtitle"
+    imagemap:
+        ground 'gfx/imagemap1.png'
+        idle 'gfx/yesnoidle.png' 
+        hover 'gfx/yesnohover.png'
+        #alpha False
+        hotspot (267,610,135,145) action yes_action
+        hotspot (884,612,130,135) action no_action
+            
+    #add 'gfx/imagemap1.png'
+    
+    if message == layout.ARE_YOU_SURE:
+        add "gfx/areyousure.png"
+ 
+    elif message == layout.DELETE_SAVE:
+        add "gfx/deletesave.png"
+        
+    elif message == layout.OVERWRITE_SAVE:
+        add "gfx/overwrite.png"
+        
+    elif message == layout.LOADING:
+        add "gfx/load.png"
+        
+    elif message == layout.QUIT:
+        add "gfx/areyousure.png"
+        
+    elif message == layout.MAIN_MENU:
+        add "gfx/mainmenu.png"
 
 
 ##############################################################################
